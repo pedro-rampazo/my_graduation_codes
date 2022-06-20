@@ -1,0 +1,29 @@
+1782 chega, Rick ja nao sai mais da mansao, metade da populacao ja esta infectada pela mutacao, um verdadeiro apocalipse.
+
+Agora, Rick precisa encontrar a senha do bunker seguindo as pistas que tio Baltazar deixou na carta de despedida:
+
+"A resposta eh a quantidade de coisas que ninguem ousaria examinar.".
+
+O objetivo eh achar a senha de 4 digitos que esta escondida na mansao.
+
+                                               /\      /\
+                                               ||______||
+                                               || ^  ^ ||
+                                               \| |  | |/
+                                                |______|
+              __                                |  __  |
+             /  \       ________________________|_/  \_|__
+            / ^^ \     /=========================/ ^^ \===|
+           /  []  \   /=========================/  []  \==|
+          /________\ /=========================/________\=|
+       *  |        |/==========================|        |=|
+      *** | ^^  ^^ |---------------------------| ^^  ^^ |--
+     *****| []  [] |           _____           | []  [] | |
+    *******        |          /_____\          |      * | |
+   *********^^  ^^ |  ^^  ^^  |  |  |  ^^  ^^  |     ***| |
+  ***********]  [] |  []  []  |  |  |  []  []  | ===***** |
+ *************     |         @|__|__|@         |/ |*******|
+***************   ***********--=====--**********| *********
+***************___*********** |=====| **********|***********
+ *************     ********* /=======\ ******** | *********
+

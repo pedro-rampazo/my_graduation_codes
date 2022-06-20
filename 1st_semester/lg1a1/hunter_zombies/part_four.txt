@@ -1,0 +1,10 @@
+Instrucoes:
+
+- O jogador pode interagir nos comodos da casa, eles podem ter pistas que definem o curso do jogo;
+
+- O jogador tera 3 tentativas de senha, caso ele nao coniga advinhar, o bunker entra em auta destruicao e o futuro da humanidade se torna incerto;
+
+- Nao saia da mansao, o mundo agora eh um lugar assolado por zumbis;
+
+A HUMANIDADE DEVE SER SALVA A QUALQUER CUSTO
+
