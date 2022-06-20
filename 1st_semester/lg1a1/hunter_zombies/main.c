@@ -347,12 +347,14 @@ void morgueRoom(){
                 opt_sn = getch();
             }
             system("cls");
-            printf("Voce colocou a mao no estomago do cadaver\n");
-            getch();
-            printf("Nada encontrado\n");
-            getch();
-            printf("- 'Belo lugar para esconder uma senha, tio... Mas para piorar, nao esta aqui' ");
-            getch();
+            if(opt_sn == 's'){
+                printf("Voce colocou a mao no estomago do cadaver\n");
+                getch();
+                printf("Nada encontrado\n");
+                getch();
+                printf("- 'Belo lugar para esconder uma senha, tio... Mas para piorar, nao esta aqui' ");
+                getch();
+            }
             morgueRoom();
             break;
         case '2':
