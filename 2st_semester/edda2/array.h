@@ -26,3 +26,25 @@ int *bubbleSort(int *array, int length){
     }while(counter != 0);
     return array;
 }
+
+/*int *bubbleSort(int *p_array, int length){
+    int counter, b, aux;
+    bubble_sort:
+        counter = 0;
+        b = 0;
+        aux_loop:
+            aux = p_array[b];
+            if(p_array[b] > p_array[b+1] && b+1 < length){
+                p_array[b] = p_array[b+1];
+                p_array[b+1] = aux;
+                counter++;
+            }
+            if(b+1 < length){
+                b++;
+                goto aux_loop;
+            }
+        if(counter > 0){
+            goto bubble_sort;
+        }
+    return p_array;
+}*/
