@@ -3,7 +3,7 @@
 #include <time.h>
 #include "/home/pedro/Development/git_space/my_graduation_codes/2st_semester/edda2/array.h"
 #include "/home/pedro/Development/git_space/my_graduation_codes/2st_semester/edda2/resource.h"
-#define TAM 100000 // Timer: 29.113336
+#define TAM 100000 // Timer: 27.929688
 
 int main(){
     int *p_array;
@@ -19,37 +19,45 @@ int main(){
     double time_spent = 0.0;
     clock_t begin = clock();
 
-    do{
+    cocktail_sort:
         counter = 0;
-        
-        for(int c = 0; c < TAM; c++){
+        c = 0;
+        x = TAM - 1;
+
+        going_loop:
             aux = p_array[c];
             if(p_array[c] > p_array[c+1] && c+1 < TAM){
                 p_array[c] = p_array[c+1];
                 p_array[c+1] = aux;
                 counter++;
             }
-        }
+            if(c+1 < TAM){
+                c++;
+                goto going_loop;
+            }
 
-        for(int x = TAM-1; x > -1; x--){
+        back_loop:
             aux = p_array[x];
-
             if(p_array[x] < p_array[x-1] && x-1 > -1){
                 p_array[x] = p_array[x-1];
                 p_array[x-1] = aux;
                 counter++;
-            }            
+            }
+            if(x-1 > -1){
+                x--;
+                goto back_loop;
+            }
+
+        if(counter > 0){
+            goto cocktail_sort;
         }
-
-    }while(counter != 0);
-
+    
     clock_t end = clock();
     time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
 
     printf("Bubble Sort:\n");
     printArray(p_array, TAM);
-
     printf("\n\nTimer: %f\n\n", time_spent);
 
-    return 0;    
+    return 0;
 }

@@ -20,7 +20,7 @@ int main(){
     }
 
     printf("Default Array:\n");
-    printArray(array, TAM); //******
+    printArray(array, TAM);
     printf("\n----------\n");
 
     double time_spent = 0.0;
