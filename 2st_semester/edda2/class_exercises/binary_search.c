@@ -1,40 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define TRUE 1
-#define FALSE 0
 
-int array_number[] = {5, 23, 27, 30, 39, 45, 56, 71, 80, 92};
-int length = sizeof array_number / sizeof array_number[0];
+int number_array[] = {5, 23, 27, 30, 39, 45, 56, 71, 80, 92};
+int length = sizeof number_array / sizeof number_array[0];
 
-int binarySearch(int num){
+int binary_search(int num){
     int begin = 0;
     int end = length - 1;
-
-    while(begin <= end){
-        int i = (begin + end) / 2;
-
-        if(array_number[i] == num){
-            return i;
+    int mid = (begin + end) / 2;
+    
+    while(begin != end || number_array[mid] == num){
+        
+        if(number_array[mid] == num){
+            return mid;
         }
-
-        if(array_number[i] < num){
-            begin += 1;
+        
+        if(number_array[mid] < num){
+            begin = mid + 1;
         }else{
-            end = i;
+            end = mid;
         }
+        
+        mid = (begin + end) / 2;
     }
+    
     return -1;
 }
 
 int main(){
+    int index = binary_search(92);
     
-    int target = binarySearch(7);
-
-    if(target != -1){
-        printf("Index: %d", target);
+    if(index != -1){
+        printf("Index: %d", index);
     }else{
         printf("Invalid Number.");
     }
-
+    
     return 0;
 }
