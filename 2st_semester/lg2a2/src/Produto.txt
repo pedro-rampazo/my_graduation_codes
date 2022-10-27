@@ -1,0 +1,4 @@
+id_produto;nome;preco
+444;Coca-Cola;7.90
+298;Camiseta;45.50
+125;Detergente;2.35

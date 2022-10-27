@@ -1,0 +1,4 @@
+id_pedido;vendedor;valor_pedido
+52;Marcos;72.45
+68;Bernardo;35.75
+12;Ricardo;10.00
