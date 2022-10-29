@@ -1,4 +1,4 @@
-cpf;nome;sexo;vendedor_atual
-123;Pedro;masculino;Rubens
-856;Jair;masculino;Tamara
-256;Camila;feminina;Rubens
+cpf;nome;data_cadastro;sexo;vendedor_atual
+123;Pedro;05/03/2022;masculino;Rubens
+856;Jair;17/12/2021;masculino;Tamara
+256;Camila;15/02/2022;feminina;Rubens
