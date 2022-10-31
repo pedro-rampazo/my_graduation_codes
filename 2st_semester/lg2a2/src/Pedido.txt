@@ -1,5 +1,5 @@
-id_pedido;cpf_cliente;data_pedido;vendedor;valor_pedido
-52;256;25/03/2022;Marcos;72.45
-68;123;01/04/2022;Bernardo;35.75
-12;856;13/08/2022;Ricardo;10.00
-13;256;27/05/2022;Silvia;105.97
+id_pedido;cpf_cliente;data_pedido;vendedor
+52;256;25/03/2022;Marcos
+68;123;01/04/2022;Bernardo
+12;856;13/08/2022;Ricardo
+13;256;27/05/2022;Silvia

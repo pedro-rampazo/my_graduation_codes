@@ -1,4 +1,7 @@
-quantidade;preco_venda
-2;10.00
-5;37.50
-10;15.90
+id_produto;quantidade;id_pedido
+298;2;52
+444;5;52
+125;10;12
+298;3;12
+444;2;68
+444;6;13

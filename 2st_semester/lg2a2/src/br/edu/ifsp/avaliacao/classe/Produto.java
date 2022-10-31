@@ -25,6 +25,14 @@ public class Produto {
         this.categoria = new Categoria(caminho_categoria, 0, this.id_categoria);
     }
 
+    public String getNome(){
+        return this.nome;
+    }
+
+    public Double getPreco(){
+        return this.preco;
+    }
+
     @Override
     public String toString(){
         return "PRODUTO [ID_PRODUTO = " + this.id_produto + ", NOME = " + this.nome + ", PRECO = " + this.preco + ", CATEGORIA = " + this.categoria.getNome() + "]";

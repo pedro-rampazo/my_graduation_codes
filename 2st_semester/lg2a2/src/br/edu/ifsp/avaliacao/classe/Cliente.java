@@ -45,8 +45,7 @@ public class Cliente {
             int ano_pedido = Integer.parseInt(campo_data_pedido[2]);
             Data data_pedido = new Data(dia_pedido, mes_pedido, ano_pedido);
             String vendedor_pedido = campos[3];
-            double valor_pedido = Double.parseDouble(campos[4]);
-            Pedido unidade_pedido = new Pedido(id_pedido, cpf_pedido, data_pedido, vendedor_pedido, valor_pedido);
+            Pedido unidade_pedido = new Pedido(id_pedido, cpf_pedido, data_pedido, vendedor_pedido);
             this.lista_pedidos[index] = unidade_pedido;
             index =+ 1;
         }
