@@ -1,0 +1,4 @@
+vendedor;data_inicio;data_fim
+Marcos;01/01/2022;31/12/2022
+Bernardo;01/01/2022;30/03/2022
+Silvia;01/01/2022;28/05/2022

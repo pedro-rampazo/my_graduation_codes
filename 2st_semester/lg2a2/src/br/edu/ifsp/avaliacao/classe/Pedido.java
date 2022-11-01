@@ -34,7 +34,6 @@ public class Pedido {
         this.data_pedido = new Data(dia, mes, ano);
         
         this.vendedor = campos[3];
-        //this.valor_pedido = Double.parseDouble(campos[4]);
 
         String caminho_item_pedido = "/home/pedro/Development/git_space/my_graduation_codes/2st_semester/lg2a2/src/ItemPedido.txt";
         leitor = new Leitor(caminho_item_pedido, 2,  Integer.toString(this.id_pedido));
@@ -77,6 +76,34 @@ public class Pedido {
         }
     }
 
+    public int getId(){
+        return this.id_pedido;
+    }
+
+    public Data getDataPedido(){
+        return this.data_pedido;
+    }
+
+    public String getCliente(){
+        return this.cliente.getNome();
+    }
+
+    public String getVendedor(){
+        return this.vendedor;
+    }
+
+    public Double getValorPedido(){
+        return this.valor_pedido;
+    }
+
+    public ItemPedido[] getListaItem(){
+        return this.lista_item;
+    }
+
+    public void setVendedor(String novo_vendedor){
+        this.vendedor = novo_vendedor;
+    }
+
     @Override
     public String toString() {   
         if(this.cliente == null){
@@ -86,4 +113,41 @@ public class Pedido {
         }   
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Pedido other = (Pedido) obj;
+        if (id_pedido != other.id_pedido)
+            return false;
+        if (cpf_cliente == null) {
+            if (other.cpf_cliente != null)
+                return false;
+        } else if (!cpf_cliente.equals(other.cpf_cliente))
+            return false;
+        if (data_pedido == null) {
+            if (other.data_pedido != null)
+                return false;
+        } else if (!data_pedido.equals(other.data_pedido))
+            return false;
+        if (cliente == null) {
+            if (other.cliente != null)
+                return false;
+        } else if (!cliente.equals(other.cliente))
+            return false;
+        if (vendedor == null) {
+            if (other.vendedor != null)
+                return false;
+        } else if (!vendedor.equals(other.vendedor))
+            return false;
+        if (Double.doubleToLongBits(valor_pedido) != Double.doubleToLongBits(other.valor_pedido))
+            return false;
+        if (!Arrays.equals(lista_item, other.lista_item))
+            return false;
+        return true;
+    }
 }

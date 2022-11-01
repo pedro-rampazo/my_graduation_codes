@@ -20,8 +20,24 @@ public class Categoria {
         this.comissao = Integer.parseInt(campos[2]);
     }
 
+    public int getId(){
+        return this.id_categoria;
+    }
+
     public String getNome(){
         return this.nome;
+    }
+
+    public int getComissao(){
+        return this.comissao;
+    }
+
+    public void setNome(String novo_nome){
+        this.nome = novo_nome;
+    }
+
+    public void setComissao(int nova_comissao){
+        this.comissao = nova_comissao;
     }
 
     @Override
@@ -29,4 +45,24 @@ public class Categoria {
         return "Categoria [id_categoria = " + this.id_categoria + ", nome = " + this.nome + ", comissao(%) = " + this.comissao + "]";    
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Categoria other = (Categoria) obj;
+        if (id_categoria != other.id_categoria)
+            return false;
+        if (nome == null) {
+            if (other.nome != null)
+                return false;
+        } else if (!nome.equals(other.nome))
+            return false;
+        if (comissao != other.comissao)
+            return false;
+        return true;
+    }
 }

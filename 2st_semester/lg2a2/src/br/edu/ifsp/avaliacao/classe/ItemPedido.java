@@ -33,8 +33,24 @@ public class ItemPedido {
         this.preco_venda = this.quantidade * this.produto.getPreco();
     }
 
+    public String getProduto(){
+        return this.produto.getNome();
+    }
+
+    public int getQuantidade(){
+        return this.quantidade;
+    }
+
     public Double getPrecoVenda(){
         return this.preco_venda;
+    }
+
+    public String getIdPedido(){
+        return this.id_pedido;
+    }
+
+    public void setQuantidade(int nova_quantidade){
+        this.quantidade = nova_quantidade;
     }
         
     @Override
@@ -42,4 +58,34 @@ public class ItemPedido {
         return "ITEM_PEDIDO [PRODUTO = " + this.produto.getNome() + ", QUANTIDADE = " + this.quantidade + ", PRECO_VENDA = " + this.preco_venda + ", ID_PEDIDO = " + this.id_pedido + "]";
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        ItemPedido other = (ItemPedido) obj;
+        if (produto == null) {
+            if (other.produto != null)
+                return false;
+        } else if (!produto.equals(other.produto))
+            return false;
+        if (id_produto == null) {
+            if (other.id_produto != null)
+                return false;
+        } else if (!id_produto.equals(other.id_produto))
+            return false;
+        if (quantidade != other.quantidade)
+            return false;
+        if (Double.doubleToLongBits(preco_venda) != Double.doubleToLongBits(other.preco_venda))
+            return false;
+        if (id_pedido == null) {
+            if (other.id_pedido != null)
+                return false;
+        } else if (!id_pedido.equals(other.id_pedido))
+            return false;
+        return true;
+    }
 }

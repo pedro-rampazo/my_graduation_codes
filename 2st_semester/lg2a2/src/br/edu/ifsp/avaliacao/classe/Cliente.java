@@ -51,8 +51,36 @@ public class Cliente {
         }
     }
 
+    public String getCpf(){
+        return this.cpf;
+    }
+
     public String getNome(){
         return this.nome;
+    }
+
+    public Data getDataCadastro(){
+        return this.data_cadastro;
+    }
+
+    public String getSexo(){
+        return this.sexo;
+    }
+
+    public String getVendedorAtual(){
+        return this.vendedor_atual;
+    }
+
+    public Pedido[] getListaPedido(){
+        return this.lista_pedidos;
+    }
+
+    public void setNome(String novo_nome){
+        this.nome = novo_nome;
+    }
+
+    public void setVendedorAtual(String novo_vendedor){
+        this.vendedor_atual = novo_vendedor;
     }
 
     @Override
@@ -60,4 +88,42 @@ public class Cliente {
         return "CLIENTE:\n[\nCPF = " + this.cpf + ",\nNOME = " + this.nome + ",\nDATA_CADASTRO = " + this.data_cadastro + ",\nSEXO = " + this.sexo + ",\nVENDEDOR_ATUAL = " + this.vendedor_atual + ",\nLISTA_PEDIDOS = " + Arrays.toString(this.lista_pedidos) + "\n]";
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Cliente other = (Cliente) obj;
+        if (cpf == null) {
+            if (other.cpf != null)
+                return false;
+        } else if (!cpf.equals(other.cpf))
+            return false;
+        if (nome == null) {
+            if (other.nome != null)
+                return false;
+        } else if (!nome.equals(other.nome))
+            return false;
+        if (data_cadastro == null) {
+            if (other.data_cadastro != null)
+                return false;
+        } else if (!data_cadastro.equals(other.data_cadastro))
+            return false;
+        if (sexo == null) {
+            if (other.sexo != null)
+                return false;
+        } else if (!sexo.equals(other.sexo))
+            return false;
+        if (vendedor_atual == null) {
+            if (other.vendedor_atual != null)
+                return false;
+        } else if (!vendedor_atual.equals(other.vendedor_atual))
+            return false;
+        if (!Arrays.equals(lista_pedidos, other.lista_pedidos))
+            return false;
+        return true;
+    }
 }

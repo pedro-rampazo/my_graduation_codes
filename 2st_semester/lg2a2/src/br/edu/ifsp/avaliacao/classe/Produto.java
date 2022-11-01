@@ -25,6 +25,10 @@ public class Produto {
         this.categoria = new Categoria(caminho_categoria, 0, this.id_categoria);
     }
 
+    public int getId(){
+        return this.id_produto;
+    }
+
     public String getNome(){
         return this.nome;
     }
@@ -33,9 +37,51 @@ public class Produto {
         return this.preco;
     }
 
+    public String getCategoria(){
+        return this.categoria.getNome();
+    }
+
+    public void setNome(String novo_nome){
+        this.nome = novo_nome;
+    }
+
+    public void setPreco(double novo_preco){
+        this.preco = novo_preco;
+    }
+
     @Override
     public String toString(){
         return "PRODUTO [ID_PRODUTO = " + this.id_produto + ", NOME = " + this.nome + ", PRECO = " + this.preco + ", CATEGORIA = " + this.categoria.getNome() + "]";
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Produto other = (Produto) obj;
+        if (id_produto != other.id_produto)
+            return false;
+        if (nome == null) {
+            if (other.nome != null)
+                return false;
+        } else if (!nome.equals(other.nome))
+            return false;
+        if (Double.doubleToLongBits(preco) != Double.doubleToLongBits(other.preco))
+            return false;
+        if (id_categoria == null) {
+            if (other.id_categoria != null)
+                return false;
+        } else if (!id_categoria.equals(other.id_categoria))
+            return false;
+        if (categoria == null) {
+            if (other.categoria != null)
+                return false;
+        } else if (!categoria.equals(other.categoria))
+            return false;
+        return true;
+    }
 }
