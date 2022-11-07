@@ -41,6 +41,11 @@ public class Produto {
         return this.categoria.getNome();
     }
 
+    public Double getComissao(){
+        double decimal_value = ((double) this.categoria.getComissao()) / 100;
+        return decimal_value;
+    }
+
     public void setNome(String novo_nome){
         this.nome = novo_nome;
     }
@@ -51,7 +56,7 @@ public class Produto {
 
     @Override
     public String toString(){
-        return "PRODUTO [ID_PRODUTO = " + this.id_produto + ", NOME = " + this.nome + ", PRECO = " + this.preco + ", CATEGORIA = " + this.categoria.getNome() + "]";
+        return "PRODUTO [ID_PRODUTO = " + this.id_produto + ", NOME = " + this.nome + ", PRECO = " + this.preco + ", CATEGORIA = " + this.categoria.getNome() + ", COMISSAO(%) = " + this.categoria.getComissao() + "]";
     }
 
     @Override

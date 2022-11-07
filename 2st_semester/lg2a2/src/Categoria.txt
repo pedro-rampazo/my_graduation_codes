@@ -1,4 +1,4 @@
 id_categoria;nome;comissao
-8;Alimentacao;5
+8;Limpeza;5
 6;Vestuario;8
 1;Bebida;2

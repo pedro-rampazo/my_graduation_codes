@@ -9,6 +9,7 @@ public class ItemPedido {
     private int quantidade;
     private double preco_venda;
     private String id_pedido;
+    private double comissao_item;
 
     public ItemPedido(String caminho, int indice, String valor) throws Exception{
         Leitor leitor = new Leitor(caminho, indice, valor);
@@ -22,6 +23,7 @@ public class ItemPedido {
         String caminho_produto = "/home/pedro/Development/git_space/my_graduation_codes/2st_semester/lg2a2/src/Produto.txt";
         this.produto = new Produto(caminho_produto, 0, this.id_produto);
         this.preco_venda = this.quantidade * this.produto.getPreco();
+        this.comissao_item = this.preco_venda * this.produto.getComissao();
     }
 
     public ItemPedido(String id_produto, int quantidade, int id_pedido) throws Exception{
@@ -31,6 +33,7 @@ public class ItemPedido {
         String caminho_produto = "/home/pedro/Development/git_space/my_graduation_codes/2st_semester/lg2a2/src/Produto.txt";
         this.produto = new Produto(caminho_produto, 0, this.id_produto);
         this.preco_venda = this.quantidade * this.produto.getPreco();
+        this.comissao_item = this.preco_venda * this.produto.getComissao();
     }
 
     public String getProduto(){
@@ -49,13 +52,17 @@ public class ItemPedido {
         return this.id_pedido;
     }
 
+    public Double getComissaoItem(){
+        return this.comissao_item;
+    }
+
     public void setQuantidade(int nova_quantidade){
         this.quantidade = nova_quantidade;
     }
         
     @Override
     public String toString(){
-        return "ITEM_PEDIDO [PRODUTO = " + this.produto.getNome() + ", QUANTIDADE = " + this.quantidade + ", PRECO_VENDA = " + this.preco_venda + ", ID_PEDIDO = " + this.id_pedido + "]";
+        return "ITEM_PEDIDO [PRODUTO = " + this.produto.getNome() + ", QUANTIDADE = " + this.quantidade + ", PRECO_VENDA = " + this.preco_venda + ", ID_PEDIDO = " + this.id_pedido + ", COMISSAO = " + this.comissao_item + "]";
     }
 
     @Override

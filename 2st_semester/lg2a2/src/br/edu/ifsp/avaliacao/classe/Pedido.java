@@ -13,6 +13,7 @@ public class Pedido {
     private String vendedor;
     private double valor_pedido;
     private ItemPedido[] lista_item;
+    private double comissao_total;
 
 
     public Pedido(String caminho, int indice, String valor) throws Exception{
@@ -41,6 +42,7 @@ public class Pedido {
         int quantidade_item_pedido = lista_item_pedido.size();
         this.lista_item = new ItemPedido[quantidade_item_pedido];
         int index = 0;
+        this.comissao_total = 0;
         for(String item_pedido_aux : lista_item_pedido){
             campos = item_pedido_aux.split(";");
             String id_produto = campos[0];
@@ -48,6 +50,7 @@ public class Pedido {
             ItemPedido unidade_item_pedido = new ItemPedido(id_produto, quantidade, this.id_pedido);
             this.lista_item[index] = unidade_item_pedido;
             this.valor_pedido += unidade_item_pedido.getPrecoVenda();
+            this.comissao_total += unidade_item_pedido.getComissaoItem();
             index =+ 1;
         }
 
@@ -72,6 +75,7 @@ public class Pedido {
             ItemPedido unidade_item_pedido = new ItemPedido(id_produto, quantidade, this.id_pedido);
             this.lista_item[index] = unidade_item_pedido;
             this.valor_pedido += unidade_item_pedido.getPrecoVenda();
+            this.comissao_total += unidade_item_pedido.getComissaoItem();
             index =+ 1;
         }
     }
@@ -100,6 +104,10 @@ public class Pedido {
         return this.lista_item;
     }
 
+    public Double getComissaoTotal(){
+        return this.comissao_total;
+    }
+
     public void setVendedor(String novo_vendedor){
         this.vendedor = novo_vendedor;
     }
@@ -107,9 +115,9 @@ public class Pedido {
     @Override
     public String toString() {   
         if(this.cliente == null){
-            return "\nPEDIDO:\n\t[ID_PEDIDO = " + this.id_pedido + ", CPF_CLIENTE = " + this.cpf_cliente + ", DATA_PEDIDO = " + this.data_pedido + ", VENDEDOR = " + this.vendedor + ", VALOR_PEDIDO = " + this.valor_pedido + ", LISTA_ITENS = " + Arrays.toString(this.lista_item) + "]";
+            return "\nPEDIDO:\n\t[ID_PEDIDO = " + this.id_pedido + ", CPF_CLIENTE = " + this.cpf_cliente + ", DATA_PEDIDO = " + this.data_pedido + ", VENDEDOR = " + this.vendedor + ", VALOR_PEDIDO = " + this.valor_pedido + ", COMISSAO_TOTAL = " + this.comissao_total + ", LISTA_ITENS = " + Arrays.toString(this.lista_item) + "]";
         }else{
-            return "\nPEDIDO:\n\t[ID_PEDIDO = " + this.id_pedido + ", CLIENTE = " + this.cliente.getNome() + ", DATA_PEDIDO = " + this.data_pedido + ", VENDEDOR = " + this.vendedor + ", VALOR_PEDIDO = " + this.valor_pedido + ", LISTA_ITENS = " + Arrays.toString(this.lista_item) + "]";
+            return "\nPEDIDO:\n\t[ID_PEDIDO = " + this.id_pedido + ", CLIENTE = " + this.cliente.getNome() + ", DATA_PEDIDO = " + this.data_pedido + ", VENDEDOR = " + this.vendedor + ", VALOR_PEDIDO = " + this.valor_pedido + ", COMISSAO_TOTAL = " + this.comissao_total + " ,LISTA_ITENS = " + Arrays.toString(this.lista_item) + "]";
         }   
     }
 
