@@ -17,7 +17,6 @@ public class Cliente {
         Leitor leitor = new Leitor(caminho, indice, valor);
         ArrayList<String> lista_cliente = leitor.conteudo();
         String cliente = lista_cliente.get(0);
-        System.out.println(cliente);
         String[] campos = cliente.split(";");
         this.cpf = campos[0];
         this.nome = campos[1];

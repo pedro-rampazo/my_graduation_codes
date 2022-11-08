@@ -15,7 +15,6 @@ public class ItemPedido {
         Leitor leitor = new Leitor(caminho, indice, valor);
         ArrayList<String> lista_item_pedido = leitor.conteudo();
         String item_pedido = lista_item_pedido.get(0);
-        System.out.println(item_pedido);
         String[] campos = item_pedido.split(";");
         this.id_produto = campos[0];
         this.quantidade = Integer.parseInt(campos[1]);

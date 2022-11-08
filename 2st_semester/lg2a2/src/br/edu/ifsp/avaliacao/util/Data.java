@@ -95,6 +95,18 @@ public class Data {
         return new Data(dia, mes, ano);
     }
 
+    public boolean intervaloData(Data data_inicio, Data data_fim){
+        if(this.ano >= data_inicio.getAno() && this.mes >= data_inicio.getMes() && this.dia >= data_inicio.getDia()){
+            if(this.ano <= data_fim.getAno() && this.mes <= data_fim.getMes() && this.dia <= data_fim.getDia()){
+                return true;
+            }
+            return false;
+        }
+        else{
+            return false;
+        }
+    }
+
     @Override
     public String toString(){
         return this.dia + "/" + this.mes + "/" + this.ano;

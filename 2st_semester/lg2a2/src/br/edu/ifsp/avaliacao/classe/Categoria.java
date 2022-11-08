@@ -13,7 +13,6 @@ public class Categoria {
         Leitor leitor = new Leitor(caminho, indice, valor);
         ArrayList<String> lista_categoria = leitor.conteudo();
         String categoria = lista_categoria.get(0);
-        System.out.println(categoria);
         String[] campos = categoria.split(";");
         this.id_categoria = Integer.parseInt(campos[0]);
         this.nome = campos[1];

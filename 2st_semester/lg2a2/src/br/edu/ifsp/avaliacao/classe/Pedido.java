@@ -24,7 +24,7 @@ public class Pedido {
         
         this.id_pedido = Integer.parseInt(campos[0]);
         this.cpf_cliente = campos[1];
-
+     
         String caminho_cliente = "/home/pedro/Development/git_space/my_graduation_codes/2st_semester/lg2a2/src/Cliente.txt";
         this.cliente = new Cliente(caminho_cliente, 0, this.cpf_cliente);
         
@@ -56,6 +56,7 @@ public class Pedido {
 
     }
 
+    
     public Pedido(int id_pedido, String cpf_cliente, Data data_pedido, String vendedor) throws Exception{
         this.id_pedido = id_pedido;
         this.cpf_cliente = cpf_cliente;
@@ -79,7 +80,7 @@ public class Pedido {
             index =+ 1;
         }
     }
-
+ 
     public int getId(){
         return this.id_pedido;
     }
