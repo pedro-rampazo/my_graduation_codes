@@ -14,14 +14,16 @@ AUTOR: PEDRO MARCOLINO RAMPAZO (SP3100065)
 
 // FUNÇÃO PARA IMPRESSÃO DO ARRAY
 int printArray(int *array, int length){
-    for(int i = 0; i < length; i++){
+    int i;
+    for(i = 0; i < length; i++){
         printf("%d ", array[i]);
     }
 }
 
 // FUNÇÃO DE PREENCHIMENTO DE VALORES ALEATÓRIOS NO ARRAY
 int *fillArray(int *array, int length){
-    for(int i = 0; i < length; i++){
+    int i;
+    for(i = 0; i < length; i++){
         array[i] = rand() % length * 10;
     }
     return array;

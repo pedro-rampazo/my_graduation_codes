@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define TAM 10
 
-int number_array[] = {5, 23, 27, 30, 39, 45, 56, 71, 80, 92};
-int length = sizeof number_array / sizeof number_array[0];
+int number_array[TAM] = {5, 23, 27, 30, 39, 45, 56, 71, 80, 92};
 
 int binary_search(int num){
     int begin = 0;
-    int end = length - 1;
+    int end = TAM - 1;
     int mid = (begin + end) / 2;
     
     while(begin != end || number_array[mid] == num){
