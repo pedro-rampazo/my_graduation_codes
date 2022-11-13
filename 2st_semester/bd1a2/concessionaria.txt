@@ -1,0 +1,44 @@
+group: concessionaria 
+
+
+automovel = {
+	id_automovel:number, marca:string, modelo:string, cor:string, ano:number, placa:string, carroceria:string, quilometragem:number, air_bag:boolean, ar_condicionado:boolean, freio_abs:boolean, computador_bordo:boolean
+	1, chevrolet, tracker, vermelho, 2020, 123abcd, suv, 12000, true, true, true, true
+	2, honda, fit, cinza, 2018, 456efgh, hatch, 68000, true, true, false, false
+}
+
+reserva = {
+    id_reserva:number, id_automovel:number, id_cliente:number, data:date, validade:date, status:string
+    1, 2, 1, 13/11/2022, 31/12/2022, a pagar
+    2, 1, 2, 10/01/2022, 31/12/2022, vendido 
+}
+
+cliente = {
+    id_cliente:number, nome:string, sobrenome:string, telefone:string, cpf:number, rg:number, e_mail:string
+    1, Pedro, Rampazo, 1234-4567, 12345678909, 27654987-X, pedro.rampazo@hotmail.com
+    2, Gilberto, Antonio, 0987-6543, 23409845687, 09098876-4, gilberto.antonio@test.com
+}
+
+venda = {
+    id_venda:number, id_reserva:number, data:date, valor:number, tipo_pagamento:string, parcela:number, juros:number
+    1, 2, 17/05/2022, 130000, financiamento, 48, 0,10
+    2, 1, 25/11/2022, 80000, cartao de credito, 12, 0,08
+}
+
+fucionario = {
+    id_funcionario:number, nome:string, sobrenome:string, rg:string, cpf:number, telefone:string, cargo:string, porcentagem_comissao:number
+    1, Rafael, Silva, 12345678-X, 098765543-12, 1234-5678, vendedor(a), 1.5
+    2, Marcela, Gomes, 12345678-X, 098987876-12, 0987-6543, vendedor(a), 2.4 
+}
+
+comissao = {
+    id_comissao:number, id_venda:number, id_funcionario:number, valor:number
+    1, 1, 1, 1950
+    2, 2, 2, 1920
+}
+
+revisao = {
+    id_revisao:number, id_venda:number; verificacao:string, valor:number, data:date, status:string
+    1, 1, freios, 90.00, 17/08/2022, concluido
+    2, 2, farois, 150.5, 26/11/2022, concluido
+}

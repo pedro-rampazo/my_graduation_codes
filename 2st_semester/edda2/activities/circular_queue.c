@@ -16,14 +16,14 @@ struct queue{
 struct queue Qinit(){
     struct queue queue_init;
     queue_init.length = MAX;
-    queue_init.begin = 0;
+    queue_init.begin = -1;
     queue_init.end = -1;
 
     return queue_init;
 }
 
 int Qisempty(struct queue qarg){
-    if(qarg.end == TRUE){
+    if(qarg.end == qarg.begin){
         return TRUE;
     }else{
         return FALSE;
