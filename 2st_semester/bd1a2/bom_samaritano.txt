@@ -1,0 +1,46 @@
+group:bom_samaritano
+
+usuario = {
+	id_usuario:number, nome:string, endereco:string, rg:string, cpf:string, senha:string
+	111, pedro, 'rua teste, numero 000', 12.345.678-09, 123.456.789-09, 123abc
+	222, ricardo, 'rua teste, numero 000', 12.345.678-09, 123.456.789-09, 123abc
+}
+
+contato_usuario = {
+	id_contato_usuario:number, id_usuario:number, celular:string, telefone:string
+	333, 222, '9 1234-5678', 1234-5678
+	444, 111, '9 1234-5678', 1234-5678
+}
+
+instituicao = {
+	id_instituicao:number, nome:string, tipo:string, endereco:string
+	555, 'lar cantinho feliz', 'cuidado de idosos', 'rua teste, numero 000'
+	666, 'albergue coracao grande', 'cuidado com moradores de rua', 'rua teste, numero 000'
+	119, 'creche amiguinho feliz', 'cuidado com criancas pobres', 'rua teste, numero 000'
+	121, 'santa casa', 'cuidados com pessoas doentes', 'rua teste, numero 000' 
+}
+
+contato_instituicao = {
+	id_contato_instituicao:number, id_instituicao:number, celular:string, telefone:string
+	777, 555, '9 1234-5678', '1234-5678'
+	888, 666, '9 1234-5678', '1234-5678'
+}
+
+responsavel = {
+	id_responsavel:number, id_instituicao:number, nome:string, rg:string, cpf:string, senha:string
+	999, 555, carlos, 12.345.678-X, 123.456.789-09, abc123
+	112, 555, leticia, 12.345.678-X, 123.456.789-09, abc123
+	113, 666, ricardo, 12.345.678-X, 123.456.789-09, abc123
+	114, 666, marcela, 12.345.678-X, 123.456.789-09, abc123
+	120, 119, carlos, 12.345.678-X, 123.456.789-09, abc123
+	123, 121, roberto, 12.345.678-X, 123.456.789-09, abc123
+}
+
+doacao = {
+	id_doacao:number, id_usuario:number, id_instituicao:number; id_responsavel:number; tipo:string, data:date
+	115, 111, 555, 999, alimentos, 2022-10-25
+	116, 111, 666, 113, 'pratos descartaveis', 2022-10-26
+	117, 222, 555, 112, fraldas, 2022-05-05
+	118, 222, 666, 114, cobertores, 2022-05-06
+	122, 111, 121, 123, medicamentos, 2022-06-01
+}
