@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Activity #07: SEO & Chrome Developer Tool</title>
+</head>
+<body>
+    <h1>Activity #07: SEO & Chrome Developer Tool</h1>
+
+    <section>
+        <h2>SEO</h2>
+        <article>
+            Além do desenvolvimento de uma página web, é preciso levar em consideração a sua otimização
+            de busca para que os mecanismos de busca sejam preparados para colocar seu site "no mapa". Para isso, 
+            há uma cartilha de boas práticas que a nível de desenvolvimento parecem irrelevantes mas que auxiliam
+            diretamente a otimização de busca. Vamos listar algumas delas:
+        </article>
+        <h3>1. Meta Tags</h3>
+        <article>
+            As meta tags são complementos no seu código HTML que indicam ao navegador que o site está preparado para
+            ser rastreado pelos mecanismos de busca.
+        </article>
+        <h3>2. Palavras-chave</h3>
+        <article>
+            Além de descrever os sites para os mecanismos de busca, também é necessário conhecer as melhores palavras
+            para descrever o tema do seu website. Alguns sites são especializados nisso, como o Neilpatel, que auxilia
+            na inserção do melhor vocabulário de descrição, elevando o raiting da sua página.
+        </article>
+        <h3>3. Canonical Tags</h3>
+        <article>
+            Canonical tags são códigos inseridos no HTML para indicar autenticidade do conteúdo produzido, os mecanismos
+            de busca tendem a indicar sites com conteúdos distintos, valorizando a personalidade de informações.
+        </article>
+        <h3>4. Uso adequado dos cabeçalhos para SEO</h3>
+        <article>
+            Se você acha que a definição do "H1", "H2", "H3" não faz a menor diferença uma vez que se define o 'font-size'
+            no CSS, você está completamente enganado. Talvez para os usuários do site isso na faça a diferença, mas para as
+            buscas é primordial. A definição de um simples H1 fará com que o site seja descrito completamente baseado nele, 
+            afinal, ele é o título do site, e isso vale para todos, H2 subtítulo, até o H6. Tome cuidado com as atribuições
+            equivocadas.
+        </article>
+        <h3>5. Descrição de imagens</h3>
+        <article>
+            Além de colocar uma descrição adequada nas imagens, isso é fundamental para que o mecanismo de busca saiba do
+            que se trata a imagem inserida no site. Um site sobre cuidadores de macacos devem garantir que as fotos dos
+            macacos apareçam na aba de imagens quando usuários da internet procurarem por ilustrações de primatas.
+        </article>
+        <h3>6. Links internos</h3>
+        <article>
+            Garanta que todas as tags de link tenham URLs de correspondência, deixar as "pontas soltas" pode confundir as
+            buscas.
+        </article>
+        <h3>7. Ferramentas</h3>
+        <ol>
+            <li>Yoast SEO: PlugIn WordPress dá dicas de desenvolvimento de SEO no site</li>
+            <li>SeoQuake: Ferramenta Google para melhorar SEO do site</li>
+            <li>MozBar: Outra ferramenta para melhorar SEO do site</li>
+            <li><a href="neilpatel.com">Neilpatel</a></li>
+            <li><a href="moz.com">Moz</a></li>
+            <li><a href="ahrefs.com">Ahrefs</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Chrome Developer Tools</h2>
+        <article>
+            O navegador do Google Chrome disponibiliza várias facilidades para monitorar o funcionamento do site. Com o
+            Developer Tools conseguimos fazer alterações de forma mais rápida até verificar a performance do site, vamos
+            analisar algumas funcionalidades:
+        </article>
+        <h3>1. Elements</h3>
+        <article>
+            Verifica a construção do site, seu elementos, tags e seletores CSS. Pode fazer alterções rápidas facilitando
+            a manutenção. Também pode visualizar os eventos em JavaScript além de ter uma visão em 3D das camadas utilizadas
+            no site (Layers).
+        </article>
+        <h3>2. Style</h3>
+        <article>
+            Nessa aba é possível tratar tudo referente ao CSS e seus estilos inseridos nas páginas. Permitindo também uma alteração
+            rápida.
+        </article>
+        <h3>3. Workspaces</h3>
+        <article>
+            Apesar de fazer alterações rápidas pelo Google Chrome, numa simples atualização da páginas, os progressos são perdidos.
+            Mas com algumas ações é possível que os progressos sejam salvos, simplesmente apontando as alterações para o arquivos
+            salvo na máquina, agora, não será mais necessário uma alteração dobrada.
+        </article>
+        <h3>4. Console</h3>
+        <article>
+            Na aba console, é possível testar execuções de códigos JavaScript, semelhando a um prompt, basta digitar as sintaxes
+            e temos uma resposta imediata de retorno
+        </article>
+        <h3>5. Debug</h3>
+        <article>
+            Permite adicionar breakpoints para que tenha a execução interrompida, com a finalidade de tratamento de erros.
+        </article>
+        <h3>6. Resources</h3>
+        <article>
+            A partir de uma página é possível enxergar todos os componentes carregados dela, como cookies, APIs e outras
+            requisições. Algumas informações são armazenadas para que não haja perdas com uma falha de conexão, chamado
+            "Local Storage".
+        </article>
+        <h3>7. Network</h3>
+        <article>
+            Analisando a perfomance do site, a aba Network mapeará todas as requisições feitas pelo site e a quanidade
+            de dados trafegados, podendo haver análises para uma melhor performance.
+        </article>
+        <h3>8. Audits</h3>
+        <article>
+            Auditorias feitas pelo Chrome no intuito de dar dicas de melhorias para a páginas, possui diversos aspectos de
+            avaliação.
+        </article>
+        <h3>9. Timeline</h3>
+        <article>
+            Testará o tempo de execução das partes do código, mostrando graficamente o quanto cada parte tem excesso de
+            tempo e que deve ser refatorado.
+        </article>
+        <h3>10. Emulator</h3>
+        <article>
+            Excelente ferramenta para a construção de sites responsivos, emulando todos os tipos de resolução, para
+            diversos dispositivos, há a opção personalizada também
+        </article>
+    </section>
+
+</body>
+</html>
