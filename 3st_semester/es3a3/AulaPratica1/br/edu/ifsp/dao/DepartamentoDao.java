@@ -48,13 +48,19 @@ public class DepartamentoDao extends GenericDao {
         return funcionarios;
     }
 
+    public String getExcecao() {
+        return excecao;
+    }
+
     public List<Departamento> consultaDepartamento() {
         Departamento departamento;
         Funcionario funcionario;
         List<Departamento> departamentos = new ArrayList<Departamento>();
         List<Funcionario> funcionarios = new ArrayList<Funcionario>();
 
-        instrucaoSql = "SELECT * FROM `Departamento`";
+        String instrucaoSql = "SELECT * FROM `Departamento`";
+        PreparedStatement comando;
+        ResultSet registros;
 
         try {
             excecao = ConnectionDatabase.conectaBd();
@@ -70,7 +76,7 @@ public class DepartamentoDao extends GenericDao {
                     while (registros.next()) {
                         departamento = new Departamento();
                         departamento.setId(registros.getInt("Id"));
-                        departamento.setNomeDepto(excecao);
+                        departamento.setNomeDepto(registros.getString("NomeDepto"));
 
                         funcionario = new Funcionario();
                         funcionario.setId(registros.getInt("IdFuncGerente"));

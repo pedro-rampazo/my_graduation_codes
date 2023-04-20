@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import br.edu.ifsp.view.funcionario.FuncionarioCadastro;
 import br.edu.ifsp.view.funcionario.FuncionarioConsulta;
+import br.edu.ifsp.view.departamento.DepartamentoConsulta;
+import br.edu.ifsp.view.cargo.CargoConsulta;
 
 public class Index {
 	public static void main(String[] args) {
@@ -57,22 +59,23 @@ public class Index {
 	}
 	
 	public static void defineOperacao(int opcaoCadastro, int opcaoOperacao) {
-		if (opcaoCadastro == 1 && opcaoOperacao == 1)
+		if (opcaoCadastro == 1 && opcaoOperacao == 1) {
 			System.out.println(opcaoCadastro + " - " + opcaoOperacao + "\n");
 		    // DepartamentoCadastro.exibeInterface();
-		else if (opcaoCadastro == 1 && opcaoOperacao == 2)
+		} else if (opcaoCadastro == 1 && opcaoOperacao == 2) {
 			System.out.println(opcaoCadastro + " - " + opcaoOperacao + "\n");
-		    // DepartamentoConsulta.exibeInterface();
-		else if (opcaoCadastro == 2 && opcaoOperacao == 1)
+			DepartamentoConsulta.exibeInterface();
+		} else if (opcaoCadastro == 2 && opcaoOperacao == 1) {
 			System.out.println(opcaoCadastro + " - " + opcaoOperacao + "\n");
 		    // CargoCadastro.exibeInterface();
-		else if (opcaoCadastro == 2 && opcaoOperacao == 2)
+		} else if (opcaoCadastro == 2 && opcaoOperacao == 2) {
 			System.out.println(opcaoCadastro + " - " + opcaoOperacao + "\n");
-		    // CargoConsulta.exibeInterface();
-		else if (opcaoCadastro == 3 && opcaoOperacao == 1)
+		    CargoConsulta.exibeInterface();
+		} else if (opcaoCadastro == 3 && opcaoOperacao == 1) {
 		    FuncionarioCadastro.exibeInterface();
-		else if (opcaoCadastro == 3 && opcaoOperacao == 2)
+		} else if (opcaoCadastro == 3 && opcaoOperacao == 2) {
 			System.out.println(opcaoCadastro + " - " + opcaoOperacao + "\n");
 		    FuncionarioConsulta.exibeInterface();
+		}
 	}
 }

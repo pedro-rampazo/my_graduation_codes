@@ -10,7 +10,7 @@ public class ConnectionDatabase {
 	private static final String SERVER = "jdbc:mysql://localhost";
 	private static final String DATABASE = "/dpbd";
 	private static final String USER = "?user=root";
-	private static final String PASSWORD = "&password=***";
+	private static final String PASSWORD = "&password=MY_PASSWORD";
 	
 	// O protocolo SSL criptografa o fluxo de dados entre o servidor de banco de dados 
     // e a aplica��o cliente, protegendo-o de ataques externos.
