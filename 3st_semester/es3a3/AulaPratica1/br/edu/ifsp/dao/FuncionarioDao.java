@@ -14,9 +14,10 @@ public class FuncionarioDao extends GenericDao {
 	private ResultSet registros; // Atributo que recebe os dados retornados por uma instru��o SQL.
 	private static String excecao = null; // Atributo para armazenar mensagens de excecao.
 
+    // AULA PRÁTICA 2
     public String insereFuncionario(Funcionario funcionario) {
         instrucaoSql = "INSERT INTO Funcionario (Nome, Sexo, Salario, PlanoSaude, IdCargo) VALUES (?,?,?,?,?)";
-        return insere(instrucaoSql, funcionario.getNome(), funcionario.getSexo().toString(), funcionario.getSalario(),
+        return insereAlteraExclui(instrucaoSql, funcionario.getNome(), funcionario.getSexo().toString(), funcionario.getSalario(),
         	                        funcionario.isPlanoSaude(), funcionario.getCargo().getId());
     }
     
@@ -51,7 +52,7 @@ public class FuncionarioDao extends GenericDao {
                 ConnectionDatabase.getConexaoBd().close(); 
             }
         } catch (Exception e) {
-        	excecao = "Tipo de Exce��o: " + e.getClass().getSimpleName() + "\nMensagem: " + e.getMessage();
+        	excecao = "Tipo de Excecao: " + e.getClass().getSimpleName() + "\nMensagem: " + e.getMessage();
         	cargos = null; // Caso ocorra qualquer exce��o.
         }
         return cargos; // Retorna o ArrayList de objetos Cargo.
@@ -113,4 +114,17 @@ public class FuncionarioDao extends GenericDao {
         }
         return funcionarios;
     }
+
+    public String alteraFuncionario(Funcionario funcionario) {
+        instrucaoSql = "UPDATE Funcionario SET Nome = ?, Sexo = ?, Salario = ?, PlanoSaude = ?, IdCargo = ? " + 
+        "WHERE Id = ?";
+        return insereAlteraExclui(instrucaoSql, funcionario.getNome(), funcionario.getSexo().toString(), funcionario.getSalario(),
+                                    funcionario.isPlanoSaude(), funcionario.getCargo().getId(), funcionario.getId());
+    }
+
+    public String excluiFuncionario(int id) {
+        instrucaoSql = "DELETE FROM `Funcionario` WHERE `Id` = ?";
+        return insereAlteraExclui(instrucaoSql, id);
+    }
+
 }

@@ -17,4 +17,9 @@ public class DepartamentoController {
         return new DepartamentoDao().consultaDepartamento();
     }
 
+    public List<String> alteraFuncionario(Integer id, String nomeDepto, Funcionario gerente) {
+        
+
+    }
+
 }

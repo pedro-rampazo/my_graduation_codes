@@ -3,35 +3,36 @@ package br.edu.ifsp.dao;
 import java.sql.PreparedStatement;
 
 public class GenericDao {
-    private PreparedStatement comando; // Atributo usado para preparar e executar instruções SQL.
+    private PreparedStatement comando; // Atributo usado para preparar e executar instruï¿½ï¿½es SQL.
     /**
-     * @param instrucaoSql Instrução SQL a ser executada.
-     * @param parametros Valores dos campos da instrução SQL. As reticências no tipo Object 
-     * indicam que "parametros" pode receber um número variável de argumentos Object. 
+     * @param instrucaoSql Instruï¿½ï¿½o SQL a ser executada.
+     * @param parametros Valores dos campos da instruï¿½ï¿½o SQL. As reticï¿½ncias no tipo Object 
+     * indicam que "parametros" pode receber um nï¿½mero variï¿½vel de argumentos Object. 
      */
-    protected String insere(String instrucaoSql, Object... parametros) {
+    // AULA PRÃTICA 2
+	 protected String insereAlteraExclui(String instrucaoSql, Object... parametros) {
     	try {
-    		String excecao = ConnectionDatabase.conectaBd(); // Abre a conexão com o banco de dados.
+    		String excecao = ConnectionDatabase.conectaBd(); // Abre a conexï¿½o com o banco de dados.
     		if (excecao == null) {
-    			// Obtém os dados de conexão com o banco de dados e prepara a instrução SQL.
+    			// Obtï¿½m os dados de conexï¿½o com o banco de dados e prepara a instruï¿½ï¿½o SQL.
                 comando = ConnectionDatabase.getConexaoBd().prepareStatement(instrucaoSql);
     			
-    	    	// Associa cada parâmetro Object recebido ao objeto "comando".
+    	    	// Associa cada parï¿½metro Object recebido ao objeto "comando".
     	        for (int i = 0; i < parametros.length; i++)
-    	        	// 1º argumento: posição do parâmetro na instrução SQL; 2º argumento: parâmetro.
+    	        	// 1ï¿½ argumento: posiï¿½ï¿½o do parï¿½metro na instruï¿½ï¿½o SQL; 2ï¿½ argumento: parï¿½metro.
     	        	// Para objetos Funcionario: 1) Nome, 2) Sexo, 3) Salario, 4) PlanoSaude, 5) IdCargo
     	        	comando.setObject(i + 1, parametros[i]);
 
-    	        comando.execute(); // Executa a instrução SQL.
+    	        comando.execute(); // Executa a instruï¿½ï¿½o SQL.
     	        
     	        comando.close(); // Libera os recursos usados pelo objeto PreparedStatement.
-    	        // Libera os recursos usados pelo objeto Connection e fecha a conexão com o banco de dados.
+    	        // Libera os recursos usados pelo objeto Connection e fecha a conexï¿½o com o banco de dados.
                 ConnectionDatabase.getConexaoBd().close();
     		} else
-        		return excecao; // Caso ocorra exceção ao tentar conectar com o banco de dados.
+        		return excecao; // Caso ocorra exceï¿½ï¿½o ao tentar conectar com o banco de dados.
         } catch (Exception e) {
-        	// Caso ocorra qualquer tipo de exceção.
-            return "Tipo de Exceção: " + e.getClass().getSimpleName() + "\nMensagem: " + e.getMessage(); 
+        	// Caso ocorra qualquer tipo de exceï¿½ï¿½o.
+            return "Tipo de Excecao: " + e.getClass().getSimpleName() + "\nMensagem: " + e.getMessage(); 
         }
         return null; // Se o registro foi inserido com sucesso.
     }

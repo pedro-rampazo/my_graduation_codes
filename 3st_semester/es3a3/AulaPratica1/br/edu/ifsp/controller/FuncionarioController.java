@@ -55,9 +55,24 @@ public class FuncionarioController {
     	return new FuncionarioDao().getExcecao();
     }
 
-	// AULA 08
+	// AULA PRÁTICA 1
 	public List<Funcionario> consultaFuncionarios() {
 		return new FuncionarioDao().consultaFuncionario();
+	}
+
+	// AULA PRÁTICA 2
+	public List<String> alteraFuncionario(Integer id, String nome, Character sexo, BigDecimal salario, Boolean planoSaude, Cargo cargo) {
+		recebeDadosFuncionario(id, nome, sexo, salario, planoSaude, cargo);
+		if (erros.size() == 0) {
+			erros.add(new FuncionarioDao().alteraFuncionario(funcionario));
+		}
+		return erros;
+	}
+
+	// AULA PRÁTICA 2
+	public String excluiFuncionario(Integer id) {
+		String erro = new FuncionarioDao().excluiFuncionario(id);
+		return erro;
 	}
 }
 

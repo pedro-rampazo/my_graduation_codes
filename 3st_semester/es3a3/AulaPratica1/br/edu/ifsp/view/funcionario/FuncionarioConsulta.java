@@ -1,11 +1,13 @@
 package br.edu.ifsp.view.funcionario;
 
 import java.util.List;
+import java.util.Scanner;
 
 import br.edu.ifsp.controller.FuncionarioController;
 import br.edu.ifsp.model.funcionario.Funcionario;
 
 public class FuncionarioConsulta {
+    static Scanner entrada = new Scanner(System.in);
     
     public static void exibeInterface() {
         
@@ -39,6 +41,41 @@ public class FuncionarioConsulta {
 
             }
             System.out.println();
+            // AULA PRATICA 2
+            exibeOpcoesAlterarExcluir();
         }
     }
+
+    // AULA PRATICA 2
+    public static void exibeOpcoesAlterarExcluir() {
+        int opcaoOperacao = 0;
+
+        do {
+            System.out.println("ALTERACAO / EXCLUSAO DE FUNCIONARIO:");
+            System.out.println("1) Alterar");
+            System.out.println("2) Excluir");
+            System.out.print("Digite uma opcao (0 para voltar): ");
+
+            opcaoOperacao = Integer.parseInt(entrada.nextLine());
+            System.out.println();
+
+            switch (opcaoOperacao) {
+                case 0:
+                    break;
+                case 1:
+                    FuncionarioAlteracao.exibeInterface();
+                    break;
+                case 2:
+                    FuncionarioExclusao.exibeInterface();
+                    break;
+                default:
+                    if (opcaoOperacao != 1 && opcaoOperacao != 2) {
+                        System.out.println("Digite uma opcao valida.");
+                    }
+                    break;
+            }
+        } while (opcaoOperacao != 0 && opcaoOperacao != 1 && opcaoOperacao != 2);
+
+    }
+
 }
