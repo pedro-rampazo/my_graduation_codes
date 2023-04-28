@@ -115,6 +115,7 @@ public class FuncionarioDao extends GenericDao {
         return funcionarios;
     }
 
+    // AULA PRÄTICA 2
     public String alteraFuncionario(Funcionario funcionario) {
         instrucaoSql = "UPDATE Funcionario SET Nome = ?, Sexo = ?, Salario = ?, PlanoSaude = ?, IdCargo = ? " + 
         "WHERE Id = ?";
@@ -122,6 +123,7 @@ public class FuncionarioDao extends GenericDao {
                                     funcionario.isPlanoSaude(), funcionario.getCargo().getId(), funcionario.getId());
     }
 
+    // AULA PRÁTICA 2
     public String excluiFuncionario(int id) {
         instrucaoSql = "DELETE FROM `Funcionario` WHERE `Id` = ?";
         return insereAlteraExclui(instrucaoSql, id);

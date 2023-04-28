@@ -104,7 +104,7 @@ public class DepartamentoDao extends GenericDao {
     // AULA PRÄTICA 2
     public String alteraDepartamento(Departamento departamento) {
         instrucaoSql = "UPDATE Departamento SET NomeDepto = ?, IdFuncGerente = ? " + "WHERE Id = ?";
-        return insereAlteraExclui(instrucaoSql, departamento.getNomeDepto(), departamento.getGerente().getNome(), 
+        return insereAlteraExclui(instrucaoSql, departamento.getNomeDepto(), departamento.getGerente().getId(), 
                                     departamento.getId());
     }
 

@@ -96,4 +96,16 @@ public class CargoDao extends GenericDao {
         }
         return cargos;
     }
+
+    // AULA PRÁTICA 2
+    public String alteraCargo(Cargo cargo) {
+        instrucaoSql = "UPDATE Cargo SET Descricao = ?, IdDepto = ? " + "WHERE Id = ?";
+        return insereAlteraExclui(instrucaoSql, cargo.getDescricao(), cargo.getDepartamento().getId(), cargo.getId());
+    }
+
+    // AULA PRÁTICA 2
+    public String excluiCargo(int id) {
+        instrucaoSql = "DELETE FROM Cargo WHERE Id = ?";
+        return insereAlteraExclui(instrucaoSql, id);
+    }
 }

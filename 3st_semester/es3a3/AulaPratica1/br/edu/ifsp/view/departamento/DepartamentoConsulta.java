@@ -1,11 +1,13 @@
 package br.edu.ifsp.view.departamento;
 
 import java.util.List;
+import java.util.Scanner;
 
 import br.edu.ifsp.controller.DepartamentoController;
 import br.edu.ifsp.model.departamento.Departamento;;
 
 public class DepartamentoConsulta {
+    static Scanner entrada = new Scanner(System.in);
     
     public static void exibeInterface() { 
         String excecaoDepartamentos = null;
@@ -29,7 +31,38 @@ public class DepartamentoConsulta {
 
             }
             System.out.println();
+            exibeOpcoesAlterarExcluir();
         }
+    }
+
+    public static void exibeOpcoesAlterarExcluir() {
+        int opcaoOperacao = 0;
+
+        do {
+            System.out.println("ALTERACAO / EXCLUSAO DE DEPARTAMENTO:");
+            System.out.println("1) Alterar");
+            System.out.println("2) Excluir");
+            System.out.print("Digite uma opcao (0 para voltar): ");
+
+            opcaoOperacao = Integer.parseInt(entrada.nextLine());
+            System.out.println();
+
+            switch (opcaoOperacao) {
+                case 0:
+                    break;
+                case 1:
+                    DepartamentoAlteracao.exibeInterface();
+                    break;
+                case 2:
+                    DepartamentoExclusao.exibeInterface();
+                    break;            
+                default:
+                    if (opcaoOperacao != 1 && opcaoOperacao != 2) {
+                        System.out.println("Digite uma opcao valida.");
+                    }
+                    break;
+            }
+        } while (opcaoOperacao != 0 && opcaoOperacao != 1 && opcaoOperacao != 2);
     }
 
 }
