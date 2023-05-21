@@ -1,0 +1,44 @@
+body {
+    background-color: #191F26;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    color: #F23A29;
+}
+
+input {
+    background-color: #2E3640;
+    border-color: #F23A29;
+    color: #F23A29;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#bttn {
+    background-color: #2E3640;
+    border-color: #F23A29;
+    color: #F23A29;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 50px;
+    width: 400px;
+    display: block;
+    font-size: 20px;
+}
+
+#container {
+    background-color: #26BFBF;
+    border-style: dotted;
+    border-color: #F23A29;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F23A29;
+}
