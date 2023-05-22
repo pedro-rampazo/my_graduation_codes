@@ -1,0 +1,54 @@
+:root {
+    --green-forest: #004D3B;
+    --green-standard: #006437;
+    --green-water: #00A884;
+    --blue: #3498DB;
+    --grey-dark: #444444;
+    --grey-light: #E5E7E9;
+    --gold: #DAA520;
+    --off-white: #F9F5E0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 0;
+
+    background-color: var(--green-standard);
+}
+
+menu {
+    display: grid;
+    align-items: center;
+    margin: 0;
+    grid-column: 1/4;
+    
+    height: 60px;
+
+    background-color: var(--green-forest); 
+
+}
+
+#logo {
+    grid-column: 1;
+
+    width: auto;
+    height: 50px;
+}
+
+h1 {
+    grid-column: 2;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--off-white);
+}
+
+#menu-icon {
+    grid-column: 3;
+
+    width: 40px;
+}
