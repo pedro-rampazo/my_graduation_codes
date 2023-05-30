@@ -58,7 +58,6 @@ h1 {
 
 #menu-icon {
     margin: auto;
-    width: 40px;
 }
 
 /* MENU <<<<<<<<<<========== */
@@ -217,6 +216,8 @@ h1 {
 .down-menu-cell button {
     display: flex;
     flex-direction: column;
+
+    align-items: center;
     margin: 10px;
     background-color: var(--green-forest);
     width: 100%;
@@ -228,7 +229,6 @@ h1 {
 .down-menu-cell button img {
     width: 30px;
     height: auto;
-    margin: auto;
 }
 
 #add-bttn img {
