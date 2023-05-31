@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    margin: 20px 20px 5px 20px;
+    margin: 60px 20px 5px 20px;
 }
 
 
@@ -61,6 +61,78 @@ h1 {
 }
 
 /* MENU <<<<<<<<<<========== */
+
+
+/* LIST MATCHES ==========>>>>>>>>>> */
+
+#list-matches {
+    display: flex;
+    
+    background-color: var(--green-forest);
+    
+    height: 100px;
+    
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 8px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-color: var(--green-water);
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#list-matches h2 {
+    margin: auto;
+}
+
+/* LIST MATCHES <<<<<<<<<<=========== */
+
+
+/* MATCH ==========>>>>>>>>>> */
+
+.match {
+    display: flex;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: var(--green-forest);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+
+    height: 50px;
+
+    background-color: var(--grey-light);
+}
+
+.match h4 {
+    margin: auto;
+    font-weight: 400;
+    color: var(--green-forest);
+}
+
+.match-label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.match img {
+    width: auto;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+/* MATCH <<<<<<<<<<========== */
 
 
 /* DOWN-MENU ==========>>>>>>>>>> */
