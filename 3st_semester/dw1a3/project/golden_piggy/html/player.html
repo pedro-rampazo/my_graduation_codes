@@ -14,7 +14,7 @@
     <menu>
         <img id="logo" src="../images/logo.svg" alt="Golden Piggy">
         <h1>Golden Piggy</h1>
-        <img id="menu-icon" src="../images/match_player_icon.svg" alt="menu" onclick="Modal.open()">
+        <img id="menu-icon" src="../images/match_player_icon.svg" alt="menu" onclick="Modal.open('#pm-modal-overlay')">
     </menu>
 
     <main>
@@ -23,31 +23,34 @@
             <h2>Jogadores</h2>
         </section>
 
-        <section class="player">
+        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
             <h4>Dudu</h4>
             <img src="../images/arrow_icon.svg" alt="View">
         </section>
         
-        <section class="player">
+        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
             <h4>Rony</h4>
             <img src="../images/arrow_icon.svg" alt="View">
         </section>
         
-        <section class="player">
+        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
             <h4>Piquerez</h4>
             <img src="../images/arrow_icon.svg" alt="View">
         </section>
         
-        <section class="player">
+        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
             <h4>Gabriel Menino</h4>
             <img src="../images/arrow_icon.svg" alt="View">
         </section>
 
-        <section id="pm-modal">
+    </main>
+    
+    <section id="pm-modal-overlay">
+        <div id="pm-modal">
             <div id="close-container">
-                <img src="../images/close_icon.svg" alt="Close">
+                <img src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#pm-modal-overlay')">
             </div>
-
+    
             <div id="button-container">
                 <a href="../html/player.html">
                     <button>Jogadores</button>
@@ -56,10 +59,25 @@
                     <button>Partidas</button>
                 </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-    
+    <section id="pl-modal-overlay">
+        <div id="pl-modal">
+            <div>
+                <h3>Jogador:</h3>
+            </div>
+            <div>
+                <input type="text">
+                <img src="../images/edit_icon.svg" alt="Edit">
+            </div>
+            <div>
+                <button>Salvar</button>
+                <button onclick="Modal.close('#pl-modal-overlay')">Fechar</button>
+            </div>
+        </div>
+    </section>
+
     <div id="down-menu">
         <div class="down-menu-cell">
             <button>

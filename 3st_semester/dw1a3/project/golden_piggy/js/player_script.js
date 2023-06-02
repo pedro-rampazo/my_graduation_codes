@@ -1,6 +1,14 @@
 const Modal = {
-    open(){
-        var pmModal = document.getElementById("pm-modal")
-        pmModal.showModal();
+    open(element){
+        document
+            .querySelector(element)
+            .classList
+            .add('active')
     },
+    close(element){
+        document
+            .querySelector(element)
+            .classList
+            .remove('active')
+    }
 }
