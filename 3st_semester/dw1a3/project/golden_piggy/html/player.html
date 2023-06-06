@@ -66,14 +66,30 @@
         <div id="pl-modal">
             <div>
                 <h3>Jogador:</h3>
+                <img id="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#pl-modal-overlay')">
             </div>
             <div>
-                <input type="text">
-                <img src="../images/edit_icon.svg" alt="Edit">
+                <input id="player-name-inpt" type="text" placeholder="player" disabled>
+                <img id="edit-icon" src="../images/edit_icon.svg" alt="Edit" onclick="Behavior.edit('player-name-inpt')">
             </div>
             <div>
-                <button>Salvar</button>
-                <button onclick="Modal.close('#pl-modal-overlay')">Fechar</button>
+                <button id="default-bttn">Salvar</button>
+                <button id="remove-bttn">Excluir</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="nwpl-modal-overlay">
+        <div id="nwpl-modal">
+            <div>
+                <h3>Jogador:</h3>
+                <img id="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#nwpl-modal-overlay')">
+            </div>
+            <div>
+                <input id="player-name-inpt" type="text" placeholder="player">
+            </div>
+            <div>
+                <button id="default-bttn">Salvar</button>
             </div>
         </div>
     </section>
@@ -87,7 +103,7 @@
         </div>
         <div class="down-menu-cell">
             <button id="add-bttn">
-                <img src="../images/add_icon.svg" alt="Add">
+                <img src="../images/add_icon.svg" alt="Add" onclick="Modal.open('#nwpl-modal-overlay')">
             </button>
         </div>
         <div class="down-menu-cell">

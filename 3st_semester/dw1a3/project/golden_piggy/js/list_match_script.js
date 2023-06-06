@@ -15,7 +15,11 @@ const Modal = {
 
 const Behavior = {
     edit(element){
-        var inputElement = document.getElementById(element);
-        inputElement.disabled = false;
+        var container = document.getElementById(element)
+        var inputElements = container.querySelectorAll('input')
+
+        for (let index = 0; index < inputElements.length; index++) {
+            inputElements[index].disabled = false;            
+        }
     }
 }

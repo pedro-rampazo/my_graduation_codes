@@ -7,6 +7,7 @@
     --grey-light: #E5E7E9;
     --gold: #DAA520;
     --off-white: #F9F5E0;
+    --red: #FD0000;
 }
 
 * {
@@ -227,7 +228,6 @@ h1 {
 #pl-modal {
     background-color: var(--grey-light);
     border-radius: 10px;
-    padding: 10px;
     width: 80%;
     height: auto;
     padding: 20px;
@@ -241,9 +241,13 @@ h1 {
     margin: 10px auto auto auto;
 }
 
+#pl-modal div:first-child {
+    margin: 0;
+}
+
 #pl-modal h3 {
     color: var(--green-forest);
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -258,20 +262,115 @@ h1 {
 #pl-modal img {
     width: 30px;
     height: auto;
+}
+
+#close-icon {
     margin: auto 10px auto auto;
 }
 
+#edit-icon {
+    margin: auto auto auto 10px;
+}
+
 #pl-modal button {
-    background-color: var(--green-forest);
     width: 100px;
     height: 40px;
     font-size: 18px;
     margin: 10px auto auto auto;
-    border-style: none;
     border-radius: 5px;
 }
 
+#default-bttn {
+    background-color: var(--green-forest);
+    border-style: none;
+}
+
+#remove-bttn {
+    background-color: var(--grey-light);
+    color: var(--red);
+    border-style: solid;
+    border-color: var(--red);
+}
+
 /* PL MODAL <<<<<<<<<<========== */
+
+
+/* NWPL MODAL ==========>>>>>>>>>> */
+
+#nwpl-modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+#nwpl-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#nwpl-modal {
+    background-color: var(--grey-light);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+
+    position: relative;
+    z-index: 1;
+}
+
+#nwpl-modal div {
+    display: flex;
+    margin: 10px auto auto auto;
+}
+
+#nwpl-modal div:first-child {
+    margin: 0;
+}
+
+#nwpl-modal h3 {
+    color: var(--green-forest);
+    font-size: 24px;
+    margin: 0;
+}
+
+#nwpl-modal input {
+    width: 100%;
+    height: 40px;
+    color: var(--grey-dark);
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#nwpl-modal img {
+    width: 30px;
+    height: auto;
+}
+
+#nwpl-modal button {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px auto auto auto;
+    border-radius: 5px;
+}
+
+/* NWPL MODAL <<<<<<<<<<========== */
 
 
 /* DOWN-MENU ==========>>>>>>>>>> */
