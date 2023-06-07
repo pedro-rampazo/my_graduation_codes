@@ -57,16 +57,78 @@ h1 {
 
 #menu-icon {
     margin: auto;
+    width: 40px;
+    height: auto;
 }
 
 /* MENU <<<<<<<<<<========== */
 
 
-/* MAIN ==========>>>>>>>>>> */
+/* PM-MODAL ==========>>>>>>>>>> */
 
+#pm-modal-overlay {
+    width: 100%;
+    height: 100%;
 
+    background-color: rgba(0,0,0,0.7);
 
-/* MAIN <<<<<<<<<<========== */
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+#pm-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#pm-modal {
+    background-color: var(--grey-light);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    height: auto;
+
+    position: relative;
+    z-index: 1;
+}
+
+#close-container {
+    display: flex;
+}
+
+#close-container img {
+    margin: 10px 10px auto auto;
+    width: 30px;
+    height: auto;
+}
+
+#button-container {
+    display: flex;
+}
+
+#button-container a {
+    margin: 20px auto 20px auto;
+}
+
+#button-container button {
+    background-color: var(--green-forest);
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+/* PM-MODAL <<<<<<<<<<========== */
 
 
 /* DOWN-MENU ==========>>>>>>>>>> */
@@ -91,12 +153,17 @@ h1 {
     width: 100%;
 }
 
+.down-menu-cell a {
+    margin: auto;
+    text-decoration: none;
+}
+
 .down-menu-cell button {
     display: flex;
     flex-direction: column;
 
     align-items: center;
-    margin: 10px;
+    margin: 10px auto;
     background-color: var(--green-forest);
     width: 100%;
     height: auto;

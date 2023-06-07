@@ -23,29 +23,37 @@
             <h2>Partidas</h2>
         </section>
 
-        <section class="match" onclick="Modal.open('#ma-modal-overlay')">
-            <h4 class="match-label">Palmeiras X Corinthians</h4>
-            <h4>31/05/2023</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
+        <a href="../html/match.html">
+            <section class="match">
+                <h4 class="match-label">Palmeiras X Corinthians</h4>
+                <h4>31/05/2023</h4>
+                <img src="../images/arrow_icon.svg" alt="View">
+            </section>
+        </a>
+
+        <a href="../html/match.html">
+            <section class="match">
+                <h4>Palmeiras X Botafogo</h4>
+                <h4>30/05/2023</h4>
+                <img src="../images/arrow_icon.svg" alt="View">
+            </section>
+        </a>
         
-        <section class="match" onclick="Modal.open('#ma-modal-overlay')">
-            <h4>Palmeiras X Botafogo</h4>
-            <h4>30/05/2023</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
+        <a href="../html/match.html">
+            <section class="match">
+                <h4>São Paulo X Palmeiras</h4>
+                <h4>29/05/2023</h4>
+                <img src="../images/arrow_icon.svg" alt="View">
+            </section>
+        </a>
         
-        <section class="match" onclick="Modal.open('#ma-modal-overlay')">
-            <h4>São Paulo X Palmeiras</h4>
-            <h4>29/05/2023</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
-        
-        <section class="match" onclick="Modal.open('#ma-modal-overlay')">
-            <h4>Palmeiras X Internacional</h4>
-            <h4>28/05/2023</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
+        <a href="../html/match.html">
+            <section class="match">
+                <h4>Palmeiras X Internacional</h4>
+                <h4>28/05/2023</h4>
+                <img src="../images/arrow_icon.svg" alt="View">
+            </section>
+        </a>
 
     </main>
 
@@ -62,39 +70,6 @@
                 <a href="../html/list_match.html">
                     <button>Partidas</button>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="ma-modal-overlay">
-        <div id="ma-modal">
-            <div>
-                <h3>Partida:</h3>
-                <img id="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#ma-modal-overlay')">
-            </div>
-            
-            <div>
-                <input class="team" type="text" placeholder="Home" disabled>
-                <input class="goal" type="number" placeholder="0" disabled>
-                <h3>X</h3>
-                <input class="goal" type="number" placeholder="0" disabled>
-                <input class="team" type="text" placeholder="Away" disabled>
-            </div>
-            
-            <div id="date-time">
-                <input type="date" disabled>
-                <input type="time" disabled>
-            </div>
-            
-            <div id="match-info">
-                <input type="text" placeholder="Estádio" disabled>
-                <input type="text" placeholder="Campeonato" disabled>
-                <input type="text" placeholder="Transmissão" disabled>
-            </div>
-            
-            <div>
-                <img id="edit-icon" src="../images/edit_icon.svg" alt="Edit" onclick="Behavior.edit('ma-modal')">
-                <button>Salvar</button>
             </div>
         </div>
     </section>
@@ -133,10 +108,12 @@
 
     <div id="down-menu">
         <div class="down-menu-cell">
-            <button>
-                <img src="../images/info_icon.svg" alt="Information">
-                Info
-            </button>
+            <a href="../html/info.html">
+                <button>
+                    <img src="../images/info_icon.svg" alt="Information">
+                    Info
+                </button>
+            </a>
         </div>
         <div class="down-menu-cell">
             <button id="add-bttn">
@@ -144,10 +121,12 @@
             </button>
         </div>
         <div class="down-menu-cell">
-            <button>
-                <img src="../images/classification.svg" alt="Classification">
-                Classificação
-            </button>
+            <a href="../html/classification.html">
+                <button>
+                    <img src="../images/classification.svg" alt="Classification">
+                    Classificação
+                </button>
+            </a>
         </div>
     </div>
 

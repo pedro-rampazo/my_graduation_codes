@@ -292,6 +292,11 @@ h1 {
     border-color: var(--red);
 }
 
+#player-info h3 {
+    display: flex;
+    margin: auto;
+}
+
 /* PL MODAL <<<<<<<<<<========== */
 
 
@@ -395,12 +400,17 @@ h1 {
     width: 100%;
 }
 
+.down-menu-cell a {
+    margin: auto;
+    text-decoration: none;
+}
+
 .down-menu-cell button {
     display: flex;
     flex-direction: column;
 
     align-items: center;
-    margin: 10px;
+    margin: 10px auto;
     background-color: var(--green-forest);
     width: 100%;
     height: auto;

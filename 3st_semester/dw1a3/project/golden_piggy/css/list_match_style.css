@@ -203,107 +203,6 @@ h1 {
 /* PM MODAL <<<<<<<<<<========== */
 
 
-/* MA MODAL ===========>>>>>>>>>> */
-
-#ma-modal-overlay {
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0,0,0,0.7);
-
-    position: fixed;
-    top: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    opacity: 0;
-    visibility: hidden;
-
-    z-index: 999;
-}
-
-#ma-modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-#ma-modal {
-    background-color: var(--grey-light);
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%;
-    height: auto;
-
-}
-
-#ma-modal div {
-    display: flex;
-    margin: 10px auto auto auto;
-    align-items: center;
-}
-
-#ma-modal h3 {
-    font-size: 24px;
-    color: var(--green-forest);
-    margin: 0;
-}
-
-#ma-modal img {
-    width: 30px;
-    height: auto;
-}
-
-#close-icon {
-    margin: auto 10px auto auto;
-}
-
-#ma-modal input {
-    height: 40px;
-    color: var(--grey-dark);
-    font-size: 18px;
-    border-radius: 5px;
-    border-style: none;
-    margin: auto;
-}
-
-.goal {
-    width: 10%;
-}
-
-.team {
-    width: 30%;
-}
-
-#date-time input {
-    width: 45%;
-
-}
-
-#match-info {
-    display: flex;
-    flex-direction: column;
-}
-
-#match-info input {
-    margin: 5px;
-    width: 100%;
-}
-
-#ma-modal button {
-    background-color: var(--green-forest);
-    width: 100px;
-    height: 40px;
-    font-size: 18px;
-    border-style: none;
-    border-radius: 5px;
-    margin: auto 0px auto auto;
-}
-
-/* MA MODAL <<<<<<<<<<=========== */
-
-
 /* NWMA-MODAL ==========>>>>>>>>>> */
 
 #nwma-modal-overlay {
@@ -356,6 +255,10 @@ h1 {
     height: auto;
 }
 
+#close-icon {
+    margin: auto 10px auto auto;
+}
+
 #nwma-modal input {
     height: 40px;
     color: var(--grey-dark);
@@ -363,6 +266,19 @@ h1 {
     border-radius: 5px;
     border-style: none;
     margin: auto;
+}
+
+.goal {
+    width: 10%;
+}
+
+.team {
+    width: 30%;
+}
+
+#date-time input {
+    width: 45%;
+
 }
 
 #nwma-modal button {
@@ -373,6 +289,11 @@ h1 {
     border-style: none;
     border-radius: 5px;
     margin: auto 0px auto auto;
+}
+
+#match-info {
+    display: flex;
+    flex-direction: column;
 }
 
 #match-info input {
@@ -405,12 +326,17 @@ h1 {
     width: 100%;
 }
 
+.down-menu-cell a {
+    margin: auto;
+    text-decoration: none;
+}
+
 .down-menu-cell button {
     display: flex;
     flex-direction: column;
 
     align-items: center;
-    margin: 10px;
+    margin: 10px auto;
     background-color: var(--green-forest);
     width: 100%;
     height: auto;

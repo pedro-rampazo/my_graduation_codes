@@ -14,10 +14,10 @@
     <menu>
         <img id="logo" src="../images/logo.svg" alt="Golden Piggy">
         <h1>Golden Piggy</h1>
-        <img id="menu-icon" src="../images/match_player_icon.svg" alt="menu">
+        <img id="menu-icon" src="../images/match_player_icon.svg" alt="menu" onclick="Modal.open('#pm-modal-overlay')">
     </menu>
     <main>
-        <section id="match">
+        <section id="match" onclick="Modal.open('#ma-modal-overlay')">
             <div class="team">
                 <img src="../images/palmeiras.svg" alt="Palmeiras">
                 <h2>Palmeiras</h2>
@@ -46,7 +46,7 @@
             </div>
         </section>
 
-        <section id="hunch">
+        <section id="hunch" onclick="Modal.open('#hu-modal-overlay')">
             <div class="hunch-cell">
                 <h4>Raphael Veiga</h4>
             </div>
@@ -113,26 +113,145 @@
 
     </main>
     
+    <section id="pm-modal-overlay">
+        <div id="pm-modal">
+            <div id="close-container">
+                <img src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#pm-modal-overlay')">
+            </div>
+    
+            <div id="button-container">
+                <a href="../html/player.html">
+                    <button>Jogadores</button>
+                </a>
+                <a href="../html/list_match.html">
+                    <button>Partidas</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ma-modal-overlay">
+        <div id="ma-modal">
+            <div>
+                <h3>Partida:</h3>
+                <img class="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#ma-modal-overlay')">
+            </div>
+            
+            <div>
+                <input class="team" type="text" placeholder="Home" disabled>
+                <input class="goal" type="number" placeholder="0" disabled>
+                <h3>X</h3>
+                <input class="goal" type="number" placeholder="0" disabled>
+                <input class="team" type="text" placeholder="Away" disabled>
+            </div>
+            
+            <div id="date-time">
+                <input type="date" disabled>
+                <input type="time" disabled>
+            </div>
+            
+            <div id="match-info">
+                <input type="text" placeholder="Estádio" disabled>
+                <input type="text" placeholder="Campeonato" disabled>
+                <input type="text" placeholder="Transmissão" disabled>
+            </div>
+            
+            <div>
+                <img id="edit-icon" src="../images/edit_icon.svg" alt="Edit" onclick="Behavior.edit('ma-modal')">
+                <button>Salvar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="hu-modal-overlay">
+        <div id="hu-modal">
+            <div>
+                <h3 id="hunch-title">Palpite:</h3>
+                <img class="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#hu-modal-overlay')">
+            </div>
+            
+            <div>
+                <select name="player" id="player" disabled>
+                    <option value="player1">Player 1</option>
+                    <option value="player2">Player 2</option>
+                    <option value="player3">Player 3</option>
+                </select>
+            </div>
+            
+            <div>
+                <h3 class="hunch-text">Casa</h3>
+                <input class="goal-modal" type="number" placeholder="0" disabled>
+                <h3 class="hunch-text">X</h3>
+                <input class="goal-modal" type="number" placeholder="0" disabled>
+                <h3 class="hunch-text">Visitante</h3>
+            </div>
+            
+            <div>
+                <h3 class="hunch-text">Pontuação:</h3>
+                <h3 class="hunch-text" id="score-hunch">+10</h3>
+            </div>
+            
+            <div>
+                <img src="../images/edit_icon.svg" alt="Edit" onclick="Behavior.edit('hu-modal')">
+                <button id="remove-bttn">Excluir</button>
+                <button id="default-bttn">Salvar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="nwhu-modal-overlay">
+        <div id="nwhu-modal">
+            <div>
+                <h3 id="hunch-title">Palpite:</h3>
+                <img class="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#nwhu-modal-overlay')">
+            </div>
+            
+            <div>
+                <select name="player" id="player">
+                    <option value="player1">Player 1</option>
+                    <option value="player2">Player 2</option>
+                    <option value="player3">Player 3</option>
+                </select>
+            </div>
+            
+            <div>
+                <h3 class="hunch-text">Casa</h3>
+                <input class="goal-modal" type="number" placeholder="0">
+                <h3 class="hunch-text">X</h3>
+                <input class="goal-modal" type="number" placeholder="0">
+                <h3 class="hunch-text">Visitante</h3>
+            </div>
+            
+            <div>
+                <button id="default-bttn">Salvar</button>
+            </div>
+        </div>
+    </section>
+
     <div id="down-menu">
-        <div class="down-menu-cell">              
-            <button>
-                <img src="../images/info_icon.svg" alt="Information">
-                Info
-            </button>
+        <div class="down-menu-cell">
+            <a href="../html/info.html">
+                <button>
+                    <img src="../images/info_icon.svg" alt="Information">
+                    Info
+                </button>
+            </a>              
         </div>
         <div class="down-menu-cell">
             <button id="add-bttn">
-                <img src="../images/add_icon.svg" alt="Add">
+                <img src="../images/add_icon.svg" alt="Add" onclick="Modal.open('#nwhu-modal-overlay')">
             </button>
         </div>
         <div class="down-menu-cell">
-            <button>
-                <img src="../images/classification.svg" alt="Classification">
-                Classificação
-            </button>
+            <a href="../html/classification.html">
+                <button>
+                    <img src="../images/classification.svg" alt="Classification">
+                    Classificação
+                </button>
+            </a>
         </div>
     </div>
     
-    <script src="./script.js"></script>
+    <script src="../js/match_script.js"></script>
 </body>
 </html>

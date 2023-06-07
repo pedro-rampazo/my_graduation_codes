@@ -14,7 +14,7 @@
     <menu>
         <img id="logo" src="../images/logo.svg" alt="Golden Piggy">
         <h1>Golden Piggy</h1>
-        <img id="menu-icon" src="../images/match_player_icon.svg" alt="menu">
+        <img id="menu-icon" src="../images/match_player_icon.svg" alt="menu" onclick="Modal.open('#pm-modal-overlay')">
     </menu>
 
     <main>
@@ -73,19 +73,43 @@
 
     </main>
 
+    <section id="pm-modal-overlay">
+        <div id="pm-modal">
+            <div id="close-container">
+                <img src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#pm-modal-overlay')">
+            </div>
+    
+            <div id="button-container">
+                <a href="../html/player.html">
+                    <button>Jogadores</button>
+                </a>
+                <a href="../html/list_match.html">
+                    <button>Partidas</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <div id="down-menu">
         <div class="down-menu-cell">
-            <button>
-                <img src="../images/info_icon.svg" alt="Information">
-                Info
-            </button>
+            <a href="../html/info.html">
+                <button>
+                    <img src="../images/info_icon.svg" alt="Information">
+                    Info
+                </button>
+            </a>
         </div>
         <div class="down-menu-cell">
-            <button>
-                <img src="../images/classification.svg" alt="Classification">
-                Classificação
-            </button>
+            <a href="../html/classification.html">
+                <button>
+                    <img src="../images/classification.svg" alt="Classification">
+                    Classificação
+                </button>
+            </a>
         </div>
     </div>
+
+    <script src="../js/classification_script.js"></script>
+
 </body>
 </html>
