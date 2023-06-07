@@ -4,4 +4,4 @@ https://pedro-rampazo.github.io/my_graduation_codes/3st_semester/dw1a3/index.htm
 
 ##Golden Piggy Project:
 
-https://pedro-rampazo.github.io/my_graduation_codes/3st_semester/dw1a3/project/golden_piggy/index.html
+https://pedro-rampazo.github.io/my_graduation_codes/3st_semester/dw1a3/project/golden_piggy/html/home.html
