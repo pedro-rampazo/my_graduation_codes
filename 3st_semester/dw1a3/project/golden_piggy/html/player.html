@@ -11,6 +11,7 @@
     <title>Golden Piggy - Player</title>
 </head>
 <body>
+    
     <menu>
         <img id="logo" src="../images/logo.svg" alt="Golden Piggy">
         <h1>Golden Piggy</h1>
@@ -23,27 +24,21 @@
             <h2>Jogadores</h2>
         </section>
 
-        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
-            <h4>Dudu</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
-        
-        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
-            <h4>Rony</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
-        
-        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
-            <h4>Piquerez</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
-        
-        <section class="player" onclick="Modal.open('#pl-modal-overlay')">
-            <h4>Gabriel Menino</h4>
-            <img src="../images/arrow_icon.svg" alt="View">
-        </section>
+        <section id="pl-section"></section>
 
     </main>
+
+    <section id="confirmation-modal-overlay">
+        <div id="confirmation-modal">
+            <div>
+                <h3>Confirma?</h3>
+            </div>
+            <div>
+                <button class="default-bttn">Sim</button>
+                <button class="remove-bttn">Não</button>
+            </div>
+        </div>
+    </section>
     
     <section id="pm-modal-overlay">
         <div id="pm-modal">
@@ -66,7 +61,7 @@
         <div id="pl-modal">
             <div>
                 <h3>Jogador:</h3>
-                <img id="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#pl-modal-overlay')">
+                <img id="close-icon" src="../images/close_icon.svg" alt="Close">
             </div>
             <div>
                 <input id="player-name-inpt" type="text" placeholder="player" disabled>
@@ -75,14 +70,14 @@
             
             <div id="player-info">
                 <h3>Pontos:</h3>
-                <h3>0</h3>
+                <h3 id="point-label">--</h3>
                 <h3>Acertos:</h3>
-                <h3>0</h3>
+                <h3 id="hit-label">--</h3>
             </div>
 
             <div>
-                <button id="default-bttn">Salvar</button>
-                <button id="remove-bttn">Excluir</button>
+                <button class="default-bttn" onclick="Modal.open('#confirmation-modal-overlay')">Salvar</button>
+                <button class="remove-bttn" onclick="Modal.open('#confirmation-modal-overlay')">Excluir</button>
             </div>
         </div>
     </section>
@@ -91,21 +86,18 @@
         <div id="nwpl-modal">
             <div>
                 <h3>Jogador:</h3>
-                <img id="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#nwpl-modal-overlay')">
+                <img id="nwcl-icon" src="../images/close_icon.svg" alt="Close" onclick="Behavior.restoreNwPlModalOverlay()">
             </div>
             <div>
-                <input id="player-name-inpt" type="text" placeholder="player">
+                <input id="nwplnm-input" type="text" placeholder="player">
             </div>
             <div>
-                <button id="default-bttn">Salvar</button>
+                <button class="default-bttn" onclick="Player.add()">Salvar</button>
             </div>
         </div>
     </section>
 
     <div id="down-menu">
-        
-
-
         <div class="down-menu-cell">
             <a href="../html/info.html">
                 <button>
