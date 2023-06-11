@@ -23,7 +23,9 @@
             <h2>Partidas</h2>
         </section>
 
-        <a href="../html/match.html">
+        <section id="ma-section"></section>
+
+        <!-- <a href="../html/match.html">
             <section class="match">
                 <h4 class="match-label">Palmeiras X Corinthians</h4>
                 <h4>31/05/2023</h4>
@@ -53,7 +55,7 @@
                 <h4>28/05/2023</h4>
                 <img src="../images/arrow_icon.svg" alt="View">
             </section>
-        </a>
+        </a> -->
 
     </main>
 
@@ -82,26 +84,26 @@
             </div>
             
             <div>
-                <input class="team" type="text" placeholder="Home">
-                <input class="goal" type="number" placeholder="0">
+                <input name="hmtm-input" class="team" type="text" placeholder="Home">
+                <input name="hmtmgl-input" class="goal" type="number" placeholder="0">
                 <h3>X</h3>
-                <input class="goal" type="number" placeholder="0">
-                <input class="team" type="text" placeholder="Away">
+                <input name="awtmgl-input" class="goal" type="number" placeholder="0">
+                <input name="awtm-input" class="team" type="text" placeholder="Away">
             </div>
             
             <div id="date-time">
-                <input type="date">
-                <input type="time">
+                <input name="date" type="date">
+                <input name="time" type="time">
             </div>
             
             <div id="match-info">
-                <input type="text" placeholder="Estádio">
-                <input type="text" placeholder="Campeonato">
-                <input type="text" placeholder="Transmissão">
+                <input name="stadium-input" type="text" placeholder="Estádio">
+                <input name="championship-input" type="text" placeholder="Campeonato">
+                <input name="transmission-input" type="text" placeholder="Transmissão">
             </div>
             
             <div>
-                <button>Salvar</button>
+                <button onclick="Match.add()">Salvar</button>
             </div>
         </div>
     </section>

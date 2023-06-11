@@ -110,11 +110,12 @@ h1 {
 #score {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #score h3 {
     font-size: 48px;
-    margin: 10px;
+    margin: 5px;
 }
 
 /* MATCH <<<<<<<<<<========== */
