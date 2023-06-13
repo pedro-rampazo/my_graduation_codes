@@ -13,7 +13,6 @@ const Modal = {
     },
     openNewHunch(element){
         Modal.open(element)
-
         Storage.getPlayers().forEach(DOM.createOption)
     },
 }
@@ -39,6 +38,10 @@ const Storage = {
     getIndex(index){
         return JSON.parse(localStorage.getItem("golden_piggy:matches"))[index] || []
     },
+    getIdMatch(){
+        const urlParams = new URLSearchParams(window.location.search)
+        return urlParams.get('index')
+    },
     getPlayers(){
         return JSON.parse(localStorage.getItem("golden_piggy:players")) || []
     },
@@ -53,7 +56,7 @@ const DOM = {
 
     createOption(player, index){
         var option = document.createElement('option')
-        option.value = index
+        option.value = player.name
         option.textContent = player.name
         option.dataset.index = index
         DOM.playerSelect.appendChild(option)
@@ -63,6 +66,13 @@ const DOM = {
 const Hunch = {
     all: Storage.getAll(),
 
+    add(){
+        const plHuSelect = document.getElementsById('player-hunch').value
+        const hmTmGls = document.getElementsByName('hmtmgls-input')[0].value
+        const awTmGls = document.getElementsByName('awtmgls-input')[0].value
+        const points = Hunch.getHunchPoints(Storage.getIdMatch(), hmTmGls, awTmGls)
+
+    },
     changeMatch(index) {
         // const homeTeamEmblem = document.getElementsByName('hmtm-emblem')[0]
         // const awayTeamEmblem = document.getElementsByName('awtm-emblem')[0]
@@ -71,13 +81,16 @@ const Hunch = {
         document.getElementsByName('awtm-name')[0].textContent = matchObj.awayTeam
         document.getElementsByName('hmtmgl-text')[0].textContent = matchObj.homeTeamGoals
         document.getElementsByName('awtmgl-text')[0].textContent = awayTeamGoals = matchObj.awayTeamGoals
-    }
+    },
+    getHunchPoints(indexMatch, hmTmHunchGoals, awTmHunchGoals){
+        const hmTmMatchGoals = Storage.getIndex(indexMatch).homeTeamGoals
+        const awTmMatchGoals = Storage.getIndex(indexMatch).awayTeamGoals
+    },
 }
 
 const App = {
     init(){
-        const urlParams = new URLSearchParams(window.location.search)
-        const index = urlParams.get('index')
+        const index = Storage.getIdMatch()
         Hunch.changeMatch(index)
     }
 }
