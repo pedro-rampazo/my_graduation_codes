@@ -42,7 +42,7 @@ const DOM = {
 
     addMatch(match, index) {
         const link = document.createElement('a')
-        link.href = "../html/match.html"
+        link.href = `../html/match.html?index=${index}`
         link.innerHTML = `
         <section class="match">
             <h4 class="match-label">${match.homeTeam} X ${match.awayTeam}</h4>
