@@ -28,7 +28,13 @@ const Behavior = {
         }
 
         selectElements.disabled = false
-    }
+    },
+    restoreNwHuModalOverlay(){
+        // document.getElementsById('player-hunch').value = ''
+        document.getElementsByName('hmtmgls-input')[0].value = ''
+        document.getElementsByName('awtmgls-input')[0].value = ''
+        Modal.close('#nwhu-modal-overlay')
+    },
 }
 
 const Storage = {
@@ -60,6 +66,11 @@ const DOM = {
         option.textContent = player.name
         option.dataset.index = index
         DOM.playerSelect.appendChild(option)
+    },
+    clearOption(){
+        while (DOM.playerSelect.options.length > 0) {
+            DOM.playerSelect.remove(0)
+        }
     }
 }
 
@@ -67,10 +78,31 @@ const Hunch = {
     all: Storage.getAll(),
 
     add(){
-        const plHuSelect = document.getElementsById('player-hunch').value
+        const plHuSelect = document.getElementById('player-hunch').value
         const hmTmGls = document.getElementsByName('hmtmgls-input')[0].value
         const awTmGls = document.getElementsByName('awtmgls-input')[0].value
         const points = Hunch.getHunchPoints(Storage.getIdMatch(), hmTmGls, awTmGls)
+
+        let {
+            player,
+            homeTeamGoals,
+            awayTeamGoals,
+            score
+        } = {
+            player: plHuSelect,
+            homeTeamGoals: hmTmGls,
+            awayTeamGoals: awTmGls,
+            score: points
+        }
+
+        const hunchList = Storage.getIndex(Storage.getIdMatch()).hunches
+
+        hunchList.push({player, homeTeamGoals, awayTeamGoals, score})
+
+        console.log(hunchList)
+
+        Behavior.restoreNwHuModalOverlay()
+        App.reload()
 
     },
     changeMatch(index) {
@@ -82,17 +114,42 @@ const Hunch = {
         document.getElementsByName('hmtmgl-text')[0].textContent = matchObj.homeTeamGoals
         document.getElementsByName('awtmgl-text')[0].textContent = awayTeamGoals = matchObj.awayTeamGoals
     },
-    getHunchPoints(indexMatch, hmTmHunchGoals, awTmHunchGoals){
-        const hmTmMatchGoals = Storage.getIndex(indexMatch).homeTeamGoals
-        const awTmMatchGoals = Storage.getIndex(indexMatch).awayTeamGoals
+    getHunchPoints(indexMatch, hmTmHuGoals, awTmHuGoals){
+        const hmTmMaGoals = Storage.getIndex(indexMatch).homeTeamGoals
+        const awTmMaGoals = Storage.getIndex(indexMatch).awayTeamGoals
+
+        if(hmTmMaGoals == hmTmHuGoals && awTmMaGoals == awTmHuGoals) {
+            return 10
+        } else if(((hmTmMaGoals == hmTmHuGoals && awTmMaGoals != awTmHuGoals) || (hmTmMaGoals != hmTmHuGoals && awTmMaGoals == awTmHuGoals)) 
+                    && 
+                ((hmTmMaGoals > awTmMaGoals && hmTmHuGoals > awTmHuGoals) || (awTmMaGoals > hmTmMaGoals && awTmHuGoals > hmTmHuGoals))) 
+        {
+            return 7
+        } else if((((hmTmMaGoals != hmTmHuGoals && awTmMaGoals != awTmHuGoals) && ((hmTmMaGoals > awTmMaGoals && hmTmHuGoals > awTmHuGoals) 
+                    || 
+                (awTmMaGoals > hmTmMaGoals && awTmHuGoals > hmTmHuGoals))) 
+                    || 
+                ((hmTmMaGoals == awTmMaGoals && hmTmHuGoals == awTmHuGoals) && (hmTmMaGoals != hmTmHuGoals && awTmMaGoals != awTmHuGoals))) ) 
+        {
+            return 5
+        } else if((hmTmMaGoals == hmTmHuGoals && awTmMaGoals != awTmHuGoals) || (hmTmMaGoals != hmTmHuGoals && awTmMaGoals == awTmHuGoals)) 
+        {
+            return 2
+        }
+        return 0
     },
 }
 
 const App = {
     init(){
+        Storage.set(Hunch.all)
         const index = Storage.getIdMatch()
         Hunch.changeMatch(index)
-    }
+    },
+    reload(){
+        DOM.clearOption()
+        App.init()
+    },
 }
 
 App.init()

@@ -94,7 +94,7 @@ const Match = {
             stadium: nwStadiumInput,
             championship: nwChampionshipInput,
             transmission: nwTransmissionInput,
-            hunches: []
+            hunches: JSON.parse("[]")
         }
 
         Match.all.push({
