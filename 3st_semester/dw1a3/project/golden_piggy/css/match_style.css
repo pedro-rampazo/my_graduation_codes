@@ -280,7 +280,7 @@ h1 {
     opacity: 0;
     visibility: hidden;
 
-    z-index: 999;
+    z-index: 900;
 }
 
 #ma-modal-overlay.active {
@@ -357,6 +357,18 @@ h1 {
     border-style: none;
     border-radius: 5px;
     margin: auto 0px auto auto;
+}
+
+.default-bttn {
+    background-color: var(--green-forest);
+    border-style: none;
+}
+
+.remove-bttn {
+    background-color: var(--grey-light);
+    color: var(--red);
+    border-style: solid;
+    border-color: var(--red);
 }
 
 /* MA-MODAL <<<<<<<<<<=========== */
@@ -548,6 +560,60 @@ h1 {
 }
 
 /* NWHU-MODAL <<<<<<<<<<========== */
+
+
+/* CONFIRMATION MODAL ==========>>>>>>>>>> */
+
+#confirmation-modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+#confirmation-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#confirmation-modal {
+    background-color: var(--grey-light);
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+}
+
+#confirmation-modal h3 {
+    color: var(--green-forest);
+    margin: auto;
+}
+
+#confirmation-modal div {
+    display: flex;
+}
+
+#confirmation-modal button {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+
+/* CONFIRMATION MODAL <<<<<<<<<<========== */
 
 
 /* DOWN-MENU ==========>>>>>>>>>> */

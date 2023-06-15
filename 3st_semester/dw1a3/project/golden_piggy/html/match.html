@@ -17,9 +17,9 @@
         <img id="menu-icon" src="../images/match_player_icon.svg" alt="menu" onclick="Modal.open('#pm-modal-overlay')">
     </menu>
     <main>
-        <section id="match" onclick="Modal.open('#ma-modal-overlay')">
+        <section id="match" onclick="Modal.openEditMatch()">
             <div class="team">
-                <img name="hmtm-emblem" src="../images/palmeiras.svg" alt="Palmeiras">
+                <img id="hmtm-emblem" src="../images/palmeiras.svg" alt="Palmeiras">
                 <h2 name="hmtm-name">Palmeiras</h2>
             </div>
             <div id="score">
@@ -28,8 +28,8 @@
                 <h3 name="awtmgl-text" class="goal-board">0</h3>
             </div>
             <div class="team">
-                <img name="awtm-emblem" src="../images/roma.svg" alt="Roma">
-                <h2 name="awtm-name">Roma</h2>
+                <img id="awtm-emblem" src="../images/palmeiras.svg" alt="Palmeiras">
+                <h2 name="awtm-name">Plameiras</h2>
             </div>
         </section>
 
@@ -48,73 +48,19 @@
 
         <section id="hunch-section"></section>
 
-
-        <!-- <section id="hunch" onclick="Modal.open('#hu-modal-overlay')">
-            <div class="hunch-cell">
-                <h4>Raphael Veiga</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>3 X 0</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>+7</h4>
-                <img src="../images/arrow_icon.svg" alt="Click">
-            </div>
-        </section>
-
-        <section id="hunch">
-            <div class="hunch-cell">
-                <h4>Rony</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>2 X 1</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>+5</h4>
-                <img src="../images/arrow_icon.svg" alt="Click">
-            </div>
-        </section>
-
-        <section id="hunch">
-            <div class="hunch-cell">
-                <h4>Gustavo Gómez</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>4 X 0</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>+10</h4>
-                <img src="../images/arrow_icon.svg" alt="Click">
-            </div>
-        </section>
-
-        <section id="hunch">
-            <div class="hunch-cell">
-                <h4>Zé Rafael</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>0 X 1</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>+0</h4>
-                <img src="../images/arrow_icon.svg" alt="Click">
-            </div>
-        </section>
-
-        <section id="hunch">
-            <div class="hunch-cell">
-                <h4>Weverton</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>4 X 4</h4>
-            </div>
-            <div class="hunch-cell">
-                <h4>+2</h4>
-                <img src="../images/arrow_icon.svg" alt="Click">
-            </div>
-        </section> -->
-
     </main>
+
+    <section id="confirmation-modal-overlay">
+        <div id="confirmation-modal">
+            <div>
+                <h3>Confirma?</h3>
+            </div>
+            <div>
+                <button id="yes-bttn" class="default-bttn">Sim</button>
+                <button id="no-bttn" class="remove-bttn">Não</button>
+            </div>
+        </div>
+    </section>
     
     <section id="pm-modal-overlay">
         <div id="pm-modal">
@@ -137,31 +83,31 @@
         <div id="ma-modal">
             <div>
                 <h3>Partida:</h3>
-                <img class="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Modal.close('#ma-modal-overlay')">
+                <img class="close-icon" src="../images/close_icon.svg" alt="Close" onclick="Behavior.restoreMaModalOverlay('ma-modal', true)">
             </div>
             
             <div>
-                <input class="team" type="text" placeholder="Home" disabled>
-                <input class="goal" type="number" placeholder="0" disabled>
+                <input id="hmtm-name" class="team" type="text" placeholder="Home" disabled>
+                <input name="hmtm-goals" class="goal" type="number" placeholder="0" disabled>
                 <h3>X</h3>
-                <input class="goal" type="number" placeholder="0" disabled>
-                <input class="team" type="text" placeholder="Away" disabled>
+                <input name="awtm-goals" class="goal" type="number" placeholder="0" disabled>
+                <input id="awtm-name" class="team" type="text" placeholder="Away" disabled>
             </div>
             
             <div id="date-time">
-                <input type="date" disabled>
-                <input type="time" disabled>
+                <input name="date" type="date" disabled>
+                <input name="time" type="time" disabled>
             </div>
             
             <div id="match-info">
-                <input type="text" placeholder="Estádio" disabled>
-                <input type="text" placeholder="Campeonato" disabled>
-                <input type="text" placeholder="Transmissão" disabled>
+                <input name="stadium" type="text" placeholder="Estádio" disabled>
+                <input name="championship" type="text" placeholder="Campeonato" disabled>
+                <input name="transmission" type="text" placeholder="Transmissão" disabled>
             </div>
             
             <div>
-                <img id="edit-icon" src="../images/edit_icon.svg" alt="Edit" onclick="Behavior.edit('ma-modal')">
-                <button>Salvar</button>
+                <img id="edit-icon" src="../images/edit_icon.svg" alt="Edit" onclick="Behavior.edit('ma-modal', false)">
+                <button onclick="Modal.updateConfirmationMaModal()">Salvar</button>
             </div>
         </div>
     </section>

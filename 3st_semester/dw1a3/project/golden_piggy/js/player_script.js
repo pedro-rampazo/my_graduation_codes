@@ -67,9 +67,9 @@ const Modal = {
 }
 
 const Behavior = {
-    edit(element){
+    edit(element, bool_value){
         var inputElement = document.getElementById(element);
-        inputElement.disabled = false;
+        inputElement.disabled = bool_value;
     },
     restoreNwPlModalOverlay(){
         document.getElementById('nwplnm-input').value = ''
