@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "2ed9123c-498b-4cd6-8176-45f5b757c73a",
+		"name": "Mmobomb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Live games list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.mmobomb.com/api1/games",
+					"protocol": "https",
+					"host": [
+						"www",
+						"mmobomb",
+						"com"
+					],
+					"path": [
+						"api1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.mmobomb.com/api1/game?id=1136",
+					"protocol": "https",
+					"host": [
+						"www",
+						"mmobomb",
+						"com"
+					],
+					"path": [
+						"api1",
+						"game"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1136"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games by platform",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.mmobomb.com/api1/games?platform=browser",
+					"protocol": "https",
+					"host": [
+						"www",
+						"mmobomb",
+						"com"
+					],
+					"path": [
+						"api1",
+						"games"
+					],
+					"query": [
+						{
+							"key": "platform",
+							"value": "browser"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games by category or tag",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.mmobomb.com/api1/games?category=mmorpg",
+					"protocol": "https",
+					"host": [
+						"www",
+						"mmobomb",
+						"com"
+					],
+					"path": [
+						"api1",
+						"games"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "mmorpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Latest mmo news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.mmobomb.com/api1/latestnews",
+					"protocol": "https",
+					"host": [
+						"www",
+						"mmobomb",
+						"com"
+					],
+					"path": [
+						"api1",
+						"latestnews"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

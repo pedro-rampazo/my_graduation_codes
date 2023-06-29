@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "63db76d1-899b-4e8b-b4a7-9a0bdf671949",
+		"name": "Last fm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getTopAlbums",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "3bc4595511937681851730cf850979c9",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=slayer&api_key=3bc4595511937681851730cf850979c9&format=json",
+					"protocol": "http",
+					"host": [
+						"ws",
+						"audioscrobbler",
+						"com"
+					],
+					"path": [
+						"2.0",
+						""
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "artist.gettopalbums"
+						},
+						{
+							"key": "artist",
+							"value": "slayer"
+						},
+						{
+							"key": "api_key",
+							"value": "3bc4595511937681851730cf850979c9"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getInfoAlbums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=3bc4595511937681851730cf850979c9&artist=Iron+Maiden&album=Powerslave&format=json",
+					"protocol": "http",
+					"host": [
+						"ws",
+						"audioscrobbler",
+						"com"
+					],
+					"path": [
+						"2.0",
+						""
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "album.getinfo"
+						},
+						{
+							"key": "api_key",
+							"value": "3bc4595511937681851730cf850979c9"
+						},
+						{
+							"key": "artist",
+							"value": "Iron+Maiden"
+						},
+						{
+							"key": "album",
+							"value": "Powerslave"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSimilarArtists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=iron+maiden&api_key=3bc4595511937681851730cf850979c9&format=json",
+					"protocol": "http",
+					"host": [
+						"ws",
+						"audioscrobbler",
+						"com"
+					],
+					"path": [
+						"2.0",
+						""
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "artist.getsimilar"
+						},
+						{
+							"key": "artist",
+							"value": "iron+maiden"
+						},
+						{
+							"key": "api_key",
+							"value": "3bc4595511937681851730cf850979c9"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTopTagsArtists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ws.audioscrobbler.com/2.0/?method=album.gettoptags&artist=radiohead&album=the%20bends&api_key=3bc4595511937681851730cf850979c9&format=json",
+					"protocol": "http",
+					"host": [
+						"ws",
+						"audioscrobbler",
+						"com"
+					],
+					"path": [
+						"2.0",
+						""
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "album.gettoptags"
+						},
+						{
+							"key": "artist",
+							"value": "radiohead"
+						},
+						{
+							"key": "album",
+							"value": "the%20bends"
+						},
+						{
+							"key": "api_key",
+							"value": "3bc4595511937681851730cf850979c9"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chartGetTopArtists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=3bc4595511937681851730cf850979c9&format=json",
+					"protocol": "http",
+					"host": [
+						"ws",
+						"audioscrobbler",
+						"com"
+					],
+					"path": [
+						"2.0",
+						""
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "chart.gettopartists"
+						},
+						{
+							"key": "api_key",
+							"value": "3bc4595511937681851730cf850979c9"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "3bc4595511937681851730cf850979c9",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
