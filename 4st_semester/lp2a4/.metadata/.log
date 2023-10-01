@@ -1,0 +1,1834 @@
+!SESSION 2023-09-30 22:29:56.215 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2023-09-30 22:30:37.538
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-30 22:30:37.538
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.commons.ui 4 0 2023-09-30 22:30:39.904
+!MESSAGE For input string: "or" under radix 16
+!STACK 0
+java.lang.NumberFormatException: For input string: "or" under radix 16
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at org.eclipse.mylyn.internal.commons.ui.E4ThemeColor.getRGBFromCssString(E4ThemeColor.java:57)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getRGBFromTheme(GradientColors.java:211)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getBackground(GradientColors.java:190)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createBorderColor(GradientColors.java:78)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createColors(GradientColors.java:54)
+	at org.eclipse.mylyn.commons.ui.GradientColors.<init>(GradientColors.java:50)
+	at org.eclipse.mylyn.commons.ui.GradientToolTip.initResources(GradientToolTip.java:49)
+	at org.eclipse.mylyn.commons.ui.GradientToolTip.<init>(GradientToolTip.java:44)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListToolTip.<init>(TaskListToolTip.java:126)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListFilteredTree.createActiveTaskComposite(TaskListFilteredTree.java:423)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.createFilterControls(AbstractFilteredTree.java:182)
+	at org.eclipse.ui.dialogs.FilteredTree.createControl(FilteredTree.java:362)
+	at org.eclipse.mylyn.commons.workbench.EnhancedFilteredTree.createControl(EnhancedFilteredTree.java:61)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.createControl(AbstractFilteredTree.java:92)
+	at org.eclipse.ui.dialogs.FilteredTree.init(FilteredTree.java:331)
+	at org.eclipse.ui.dialogs.FilteredTree.<init>(FilteredTree.java:289)
+	at org.eclipse.mylyn.commons.workbench.EnhancedFilteredTree.<init>(EnhancedFilteredTree.java:48)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.<init>(AbstractFilteredTree.java:71)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListFilteredTree.<init>(TaskListFilteredTree.java:135)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListView.createPartControl(TaskListView.java:591)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:987)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:952)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:141)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:395)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:322)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:110)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5960)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:121)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:677)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:150)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:83)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5960)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.ui.internal.WorkbenchPage.busySetPerspective(WorkbenchPage.java:4040)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$12(WorkbenchPage.java:3977)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3977)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:899)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:987)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:141)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:97)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1468)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:118)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:987)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:141)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:395)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:336)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:109)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.oomph.setup.editor 2 0 2023-09-30 22:30:53.627
+!MESSAGE Could not open a web browser because there are none configured. Check the Web Browser preferences.
+!STACK 1
+org.eclipse.ui.PartInitException: Could not open a web browser because there are none configured. Check the Web Browser preferences.
+	at org.eclipse.ui.internal.browser.DefaultBrowserSupport.createBrowser(DefaultBrowserSupport.java:104)
+	at org.eclipse.ui.internal.browser.WorkbenchBrowserSupport.createBrowser(WorkbenchBrowserSupport.java:92)
+	at org.eclipse.oomph.setup.presentation.handlers.DonateHandler.execute(DonateHandler.java:66)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:309)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:243)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$2.run(SetupUIPlugin.java:371)
+	at org.eclipse.oomph.ui.UIUtil$5.run(UIUtil.java:571)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 1 org.eclipse.ui 4 0 2023-09-30 22:30:53.628
+!MESSAGE Could not open a web browser because there are none configured. Check the Web Browser preferences.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:37:17.312
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:37:17.312
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.312
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.312
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.313
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.313
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.313
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.313
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:37:17.322
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:37:17.322
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.322
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.322
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.322
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.322
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.322
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.322
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.322
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.323
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.323
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.323
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.323
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.323
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.323
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:37:17.332
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:37:17.332
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.332
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.332
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:37:17.333
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:37:17.333
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:37:17.333
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:37:17.333
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2023-09-30 22:37:51.364
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/justj/epp/release/17.0.0.v20230831-1210/artifacts.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:454)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:140)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:257)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2023-09-30 22:37:51.365
+!MESSAGE Unable to read repository at https://download.eclipse.org/justj/epp/release/17.0.0.v20230831-1210/artifacts.xml.xz.
+!STACK 0
+java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:257)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:119)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-09-30 22:37:54.469
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-09-30 22:37:54.469
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-09-30 22:37:54.470
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-09-30 22:37:54.470
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.p2.operations.ProfileModificationJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-09-30 22:37:54.470
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob
+!SESSION 2023-09-30 22:37:54.947 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2023-09-30 22:38:04.477
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-30 22:38:04.478
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:41:05.784
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:41:05.784
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.784
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.784
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.785
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.785
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.786
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.786
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.786
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.786
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.786
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.786
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.786
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.786
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:41:05.795
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:41:05.795
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.795
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.795
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.795
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.795
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.795
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.795
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.795
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.796
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.796
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.796
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.796
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.796
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.796
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:41:05.810
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:41:05.810
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.810
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.810
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.810
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.810
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.810
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.810
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.811
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.811
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2023-09-30 22:41:05.812
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2023-09-30 22:41:05.812
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.812
+!MESSAGE Software being installed: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.812
+!MESSAGE Software being installed: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.812
+!MESSAGE Software currently installed: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.812
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE Core Runtime 3.27.0.v20230515-1719 (org.eclipse.core.runtime 3.27.0.v20230515-1719)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE Core Runtime 3.29.0.v20230726-0617 (org.eclipse.core.runtime 3.29.0.v20230726-0617)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE Validation Framework 1.3.0.v202308161955 (org.eclipse.wst.validation 1.3.0.v202308161955)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE Validation Framework 1.2.801.v202007142017 (org.eclipse.wst.validation 1.2.801.v202007142017)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: Eclipse IDE for Java Developers 4.28.0.20230608-1200 (epp.package.java 4.28.0.20230608-1200)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.platform.feature.group [4.28.0.v20230605-0440,4.28.0.v20230605-0440]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: Structured Source JSP Model 1.4.600.v202305221402 (org.eclipse.jst.jsp.core 1.4.600.v202305221402)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: Structured Source JSP Model 1.4.700.v202308180906 (org.eclipse.jst.jsp.core 1.4.700.v202308180906)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: osgi.bundle; org.eclipse.core.runtime [3.28.0,4.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: SSE JSP Source Editor 1.3.500.v202305221615 (org.eclipse.jst.jsp.ui 1.3.500.v202305221615)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.2.700,1.3.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: SSE JSP Source Editor 1.3.600.v202308160453 (org.eclipse.jst.jsp.ui 1.3.600.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: osgi.bundle; org.eclipse.jst.jsp.core [1.4.0,1.5.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: Eclipse Java Web Developer Tools 3.31.0.v202307061452 (org.eclipse.jst.web_ui.feature.feature.group 3.31.0.v202307061452)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jst.jsp.ui 0.0.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: Eclipse Platform 4.28.0.v20230605-0440 (org.eclipse.platform.feature.group 4.28.0.v20230605-0440)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.core.runtime [3.27.0.v20230515-1719,3.27.0.v20230515-1719]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: HTML UI Source Editor 1.1.801.v202308160453 (org.eclipse.wst.html.ui 1.1.801.v202308160453)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: osgi.bundle; org.eclipse.wst.validation [1.3.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2023-09-30 22:41:05.813
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE From: Eclipse Web Developer Tools 3.31.0.v202308210520 (org.eclipse.wst.web_ui.feature.feature.group 3.31.0.v202308210520)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2023-09-30 22:41:05.813
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.wst.html.ui [1.1.801.v202308160453,1.1.801.v202308160453]
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.215
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.simpleRepository
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getHttpClientFactory(Activator.java:242)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getBrowseHttpClient(Activator.java:267)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientBrowseFileTransferFactory$1.sendBrowseRequest(HttpClientBrowseFileTransferFactory.java:59)
+	at org.eclipse.ecf.provider.filetransfer.browse.MultiProtocolFileSystemBrowserAdapter.sendBrowseRequest(MultiProtocolFileSystemBrowserAdapter.java:97)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.sendBrowseRequest(FileInfoReader.java:184)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:415)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:278)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.getLocalFile(SimpleArtifactRepositoryFactory.java:68)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:92)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:80)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.222
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.XZedRepository
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getHttpClientFactory(Activator.java:242)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getBrowseHttpClient(Activator.java:267)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientBrowseFileTransferFactory$1.sendBrowseRequest(HttpClientBrowseFileTransferFactory.java:59)
+	at org.eclipse.ecf.provider.filetransfer.browse.MultiProtocolFileSystemBrowserAdapter.sendBrowseRequest(MultiProtocolFileSystemBrowserAdapter.java:97)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.sendBrowseRequest(FileInfoReader.java:184)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:415)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:109)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.226
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.compositeRepository
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getHttpClientFactory(Activator.java:242)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getBrowseHttpClient(Activator.java:267)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientBrowseFileTransferFactory$1.sendBrowseRequest(HttpClientBrowseFileTransferFactory.java:59)
+	at org.eclipse.ecf.provider.filetransfer.browse.MultiProtocolFileSystemBrowserAdapter.sendBrowseRequest(MultiProtocolFileSystemBrowserAdapter.java:97)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.sendBrowseRequest(FileInfoReader.java:184)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:415)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:278)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.getLocalFile(CompositeArtifactRepositoryFactory.java:71)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:95)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.299
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.updatesite.artifactRepository
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.getDataFile(String)" because the return value of "org.eclipse.equinox.internal.p2.updatesite.Activator.getBundleContext()" is null
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.getLocalRepositoryLocation(UpdateSiteMetadataRepositoryFactory.java:40)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.loadRepository(UpdateSiteArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.load(UpdateSiteArtifactRepositoryFactory.java:59)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2023-09-30 22:41:23.305
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://download.eclipse.org/technology/epp/packages/2023-09/202309071200.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:405)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:388)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:279)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2023-09-30 22:41:23.306
+!MESSAGE No repository found at https://download.eclipse.org/technology/epp/packages/2023-09/202309071200.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.307
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.compositeRepository
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getTransport()" is null
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:134)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadIndexFile(CachingRepositoryManager.java:413)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:202)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getTransport()" is null
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.handleRemoteIndexFile(AbstractRepositoryManager.java:738)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:732)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	... 50 more
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.310
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.simpleRepository
+!STACK 0
+java.lang.NullPointerException: Cannot enter synchronized block because "this.browseFileTransferProtocolMap" is null
+	at org.eclipse.ecf.internal.provider.filetransfer.Activator.getBrowseFileTransfer(Activator.java:633)
+	at org.eclipse.ecf.provider.filetransfer.browse.MultiProtocolFileSystemBrowserAdapter.sendBrowseRequest(MultiProtocolFileSystemBrowserAdapter.java:81)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.sendBrowseRequest(FileInfoReader.java:184)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:415)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:278)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.getLocalFile(SimpleArtifactRepositoryFactory.java:68)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:92)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:80)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.311
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.XZedRepository
+!STACK 0
+java.lang.NullPointerException: Cannot enter synchronized block because "this.browseFileTransferProtocolMap" is null
+	at org.eclipse.ecf.internal.provider.filetransfer.Activator.getBrowseFileTransfer(Activator.java:633)
+	at org.eclipse.ecf.provider.filetransfer.browse.MultiProtocolFileSystemBrowserAdapter.sendBrowseRequest(MultiProtocolFileSystemBrowserAdapter.java:81)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.sendBrowseRequest(FileInfoReader.java:184)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:275)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:415)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:109)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-09-30 22:41:23.313
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.updatesite.artifactRepository
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.getDataFile(String)" because the return value of "org.eclipse.equinox.internal.p2.updatesite.Activator.getBundleContext()" is null
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.getLocalRepositoryLocation(UpdateSiteMetadataRepositoryFactory.java:40)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.loadRepository(UpdateSiteArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.updatesite.artifact.UpdateSiteArtifactRepositoryFactory.load(UpdateSiteArtifactRepositoryFactory.java:59)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2023-09-30 22:41:23.314
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://download.eclipse.org/releases/2023-09/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:405)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:388)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:279)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2023-09-30 22:41:23.314
+!MESSAGE No repository found at https://download.eclipse.org/releases/2023-09/.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2023-09-30 22:41:23.334
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2023-09-30 22:41:23.334
+!MESSAGE session context was:(profile=epp.package.java, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2023-09-30 22:41:23.334
+!MESSAGE java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getTransport()" is null
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getTransport()" is null
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:134)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadIndexFile(CachingRepositoryManager.java:413)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:202)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:587)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:202)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:176)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getAllLoadedArtifactRepositories(ProvisioningContext.java:370)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactSources(ProvisioningContext.java:451)
+	at org.eclipse.equinox.internal.p2.engine.phases.AuthorityChecker.start(AuthorityChecker.java:87)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:97)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:95)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getTransport()" is null
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.handleRemoteIndexFile(AbstractRepositoryManager.java:738)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:732)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	... 20 more
+!SESSION 2023-09-30 22:41:25.859 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2023-09-30 22:41:41.237
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-30 22:41:41.237
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
