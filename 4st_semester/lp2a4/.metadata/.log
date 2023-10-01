@@ -1832,3 +1832,1662 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-10-01 19:40:00.051 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2023-10-01 19:40:13.895
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-01 19:40:13.895
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:26.232
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,javax.wsdl,1.5.1.v201012040544 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:26.955
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,com.ibm.icu.base,58.2.0.v20170418-1837 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:26.956
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,com.google.guava,21.0.0.v20170206-1425 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:26.958
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.commons.codec,1.9.0.v20170208-1614 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:28.157
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.commons.logging,1.0.4.v201101211617 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:28.326
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.log4j,1.2.15.v201012070815 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:28.687
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.wsil4j,1.0.0.v200901211807 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:28.692
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.xerces,2.9.0.v201101211617 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:28.853
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.xml.resolver,1.2.0.v201005080400 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:29.272
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem,2.0.600.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:29.331
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.beaninfo,2.0.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:29.520
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.beaninfo.vm,2.0.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:29.676
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.beaninfo.vm.common,2.0.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:45:30.560
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.jem.proxy,2.0.500.v201504161518.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:30.875
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.workbench,2.0.400.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:31.224
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.json,1.0.100.v201612232120 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:31.358
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.annotations.controller,1.1.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:31.433
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.annotations.core,1.1.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:31.792
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.frameworks,1.1.701.v201509021802 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:31.801
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.annotations.ui,1.1.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:31.802
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ejb.doc.user,1.1.301.v201105130955 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:32.252
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ejb.ui.infopop,1.0.300.v201002231012 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:45:32.941
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.enterprise_userdoc.feature,3.6.0.v201612121628.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:32.968
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.doc.user,1.1.400.v201008122207 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:33.137
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotation.model,1.1.400.v201701262105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:33.426
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotations.emitter,1.1.300.v201701262105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:33.712
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotations.ui,1.1.300.v201701262105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:33.851
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotations.xdoclet,1.2.300.v201701262105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:33.906
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.infopop,1.0.300.v201309091923 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:33.992
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.jca,1.1.900.v201701262104 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:34.202
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.jca.ui,1.1.600.v201701262104 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:34.222
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.navigator.ui,1.1.700.v201701262104 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:35.018
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.webservice,1.1.500.v201701262104 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:35.337
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.webservice.ui,1.1.600.v201701262104 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:35.524
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.xdoclet.runtime,1.1.300.v201004280609 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:35.725
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee.ejb,1.0.500.v201701262105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:36.409
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.servlet.ui.infopop,1.0.500.v201105121947 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:36.566
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws,1.0.800.v201701262139 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10052 2023-10-01 19:45:37.099
+!MESSAGE Cannot continue the operation.  There is another install operation in progress.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10052 2023-10-01 19:45:37.102
+!MESSAGE Cannot continue the operation.  There is another install operation in progress.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.220
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.550.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.423
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.900.v201701262139 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.473
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.900.v201701262139 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.482
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.625
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.ui.doc.user,1.1.200.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.636
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.776
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption.ui,1.1.850.v201701262139 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:37.824
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption.ui.doc.user,1.0.700.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:38.513
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.creation.ejb.ui,1.0.250.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:38.714
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.creation.ui,1.0.950.v201701262139 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.068
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.doc.user,1.0.700.v201612121628 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.370
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.565
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.uddiregistry,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.565
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.ui,1.0.600.v201701262139 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.581
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env,1.0.500.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.779
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.core,1.0.300.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.784
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.doc.user,1.5.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:39.997
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.infopop,1.0.200.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:40.641
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.ui,1.1.200.v201503231435 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:40.730
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.core,1.2.0.v200908251833 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:40.805
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.101.v201107081800 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:40.909
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.environment,1.0.400.v200912181831 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:41.084
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.frameworks.ui,1.2.400.v201504292002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:41.312
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.infopop,1.0.300.v201309101952 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:41.465
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.snippets,1.2.300.v201705162046 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:41.691
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.ui,1.1.500.v200911182011 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:41.974
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.uriresolver,1.2.300.v201702270556 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:42.009
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.css.core,1.1.1000.v201704250120 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:42.018
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.css.ui,1.0.1100.v201704250105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:42.845
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtd.core,1.1.700.v201211012112 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:42.922
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtd.ui,1.0.801.v201308100602 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:43.280
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtdeditor.doc.user,1.0.700.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:43.446
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.html.ui,1.0.1200.v201608060428 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:43.505
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.internet.cache,1.0.800.v201702270716 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:43.756
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.internet.monitor.core,1.0.600.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:43.758
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.internet.monitor.ui,1.0.700.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:43.929
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium,0.5.200.v201610211901 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:44.337
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.debug,0.4.0.v201605131737 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:45.024
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.debug.core,0.5.300.v201705091354 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:45:45.341
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.jsdt.chromium.debug.feature,0.6.0.v201705091354.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:45.425
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.debug.js,0.1.200.v201610211901 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:45.609
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.debug.jsdtbridge,0.5.200.v201610211901 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:45.754
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.debug.ui,0.6.200.v201701261810 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:46.205
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.wip.eclipse,0.5.200.v201610212001 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:46.893
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.wipbackend.dev,0.5.200.v201610212001 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:47.443
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.chromium.wipbackend.protocol_1_0,0.5.200.v201610212001 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:48.651
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.core,3.2.200.v201610211901 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:48.939
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.crossfire,1.0.500.v201505071819 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:49.521
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.rhino,1.0.500.v201605251607 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:49.949
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.rhino.debugger,1.0.600.v201604292217 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:50.154
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.rhino.ui,1.0.500.v201604292217 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:50.756
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.transport,1.0.300.v201502261613 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:50.810
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.ui,1.0.600.v201605311817 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:50.876
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.bower,1.0.200.v201610220243 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:51.048
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.cli,1.0.0.v201605192332 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:51.189
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.common,1.0.200.v201610211901 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:51.626
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.grunt,1.0.200.v201610211901 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:51.882
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.gulp,1.0.200.v201610211901 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:51.895
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.node,1.1.100.v201705091354 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.072
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.node.common,1.0.0.v201605131737 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.124
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.support.firefox,1.0.501.v201602241911 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.127
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.manipulation,1.0.601.v201602241911 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.132
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.support.ie,1.0.601.v201602241911 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.247
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.web.support.jsp,1.0.600.v201307151913 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.316
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.bower.core,1.0.0.v201605150457 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.849
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.bower.ui,1.0.0.v201605201503 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:52.864
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.eslint.core,1.0.0.v201605150457 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.008
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.eslint.ui,1.0.0.v201605201503 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.069
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.jshint.core,1.0.0.v201605150457 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.233
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.jshint.ui,1.0.0.v201605201503 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.289
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.npm.core,1.0.0.v201605150457 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.755
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.npm.ui,1.0.0.v201605201503 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.756
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.schemaprocessor,1.0.200.v201704192002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.929
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.ui,1.0.100.v201612232120 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:53.992
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.core,1.10.0.v201705172051 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:54.051
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.discovery,1.3.100.v201705102053 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:54.175
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.ui.doc.user,1.1.600.v201309182117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:54.234
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.ui.infopop,1.1.200.v201309182117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:45:54.371
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.server_core.feature,3.3.700.v201705172051.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:45:54.453
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.server_userdoc.feature,3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:54.538
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.doc.user,1.1.100.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:54.591
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.standard.schemas,1.0.800.v201706011851 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:54.839
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.validation.infopop,1.0.300.v201309101952 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.073
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.web,1.1.800.v201312041437 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.093
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.web.ui,1.1.601.v201602221748 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.157
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.web.ui.infopop,1.0.300.v200805140206 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.304
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws,1.1.400.v201503231435 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.304
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.webtools.doc.user,1.0.500.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.515
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.630
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.parser,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.642
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.service.policy,1.0.450.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.870
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.service.policy.ui,1.0.500.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:55.995
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.ui,1.1.300.v201503231435 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:45:56.165
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_userdoc.feature,3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:45:56.316
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_wsdl15.feature,1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:56.465
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl.ui,1.2.800.v201510282151 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:56.611
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl.ui.doc.user,1.0.850.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:56.886
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl.validation,1.1.700.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:56.937
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsi,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:57.072
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsi.ui,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:58.203
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsd.core,1.1.900.v201401141857 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:58.203
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsi.ui.doc.user,1.0.750.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:58.203
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.ui,1.1.800.v201704102213 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:45:58.661
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.mozilla.javascript,1.7.5.v201504281450 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:02.523
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.ui,1.0.301.v201707201954 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:02.523
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.frameworks,1.2.201.v201707201954 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:03.824
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsp.ui.infopop,1.0.200.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:03.824
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.util,2.1.201.v201707201954 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:04.735
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.modulecore.ui,1.0.301.v201707201954 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:04.977
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.doc.user,1.2.0.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:05.131
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtd.ui.infopop,1.0.400.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:05.745
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.html.ui.infopop,1.0.201.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:05.828
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.web.core,1.0.901.v201707142218 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:06.081
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.json.core,1.0.100.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:06.389
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.ui,1.3.600.v201707042340 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:06.972
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.ui.infopop,1.0.300.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:06.973
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.validation,1.2.701.v201707142105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:06.973
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.validation.ui,1.2.501.v201707142105 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:07.369
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.explorer,1.0.950.v201710032159 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:07.702
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.ui.infopop,1.0.400.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:07.876
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xmleditor.doc.user,1.0.700.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:07.950
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsdeditor.doc.user,1.0.800.v201707252002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:09.469
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.core,1.4.0.v201711302141 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:09.469
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb,1.1.900.v201711022131 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:46:09.469
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.enterprise_core.feature,3.9.0.v201711022131.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:10.760
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ejb.ui,1.1.910.v201711022131 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:11.875
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ui,1.1.930.v201711011602 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:12.941
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.web,1.1.910.v201711032019 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:13.061
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee,1.0.901.v201711011953 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:13.543
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee.ui,1.0.900.v201711061738 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:14.619
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee.web,1.0.700.v201711011953 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:14.744
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.servlet.ui,1.1.920.v201711302141 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:14.877
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxrs.ui,1.0.800.v201711082201 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:15.002
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.ui,1.5.401.v201711152154 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:46:15.550
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.server_ui.feature,3.3.700.v201711152154.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:46:15.805
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_core.feature,3.7.200.v201710302117.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:16.498
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl,1.2.500.v201710302117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-01 19:46:17.858
+!MESSAGE An internal error occurred during: "File Transport Reader".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getLogService(Activator.java:202)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.log(Activator.java:213)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:200)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:199)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:17.878
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl,1.2.500.v201710302117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-01 19:46:17.879
+!MESSAGE An internal error occurred during: "Install download1".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getTransport()" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:17.881
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.doc.user,1.5.0.v201712131442 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:17.881
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee,1.2.201.v201801172042 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:46:17.881
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.enterprise_ui.feature,3.9.3.v201803221418.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:46:17.881
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsp.core,1.2.1002.v201711072103 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.882
+!MESSAGE Error processing mirrors URL: http://www.eclipse.org/downloads/download.php?format=xml&file=/releases/oxygen/201804111000&countryCode=us&timeZone=-3&format=xml
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.stream(java.net.URI, org.eclipse.core.runtime.IProgressMonitor)" because "this.transport" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorsDocument(MirrorSelector.java:305)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.computeMirrors(MirrorSelector.java:259)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.initMirrors(MirrorSelector.java:360)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.selectMirror(MirrorSelector.java:430)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorLocation(MirrorSelector.java:338)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getMirror(SimpleArtifactRepository.java:761)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:655)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-01 19:46:17.883
+!MESSAGE An internal error occurred during: "Install download2".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getTransport()" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.883
+!MESSAGE Error processing mirrors URL: http://www.eclipse.org/downloads/download.php?format=xml&file=/releases/oxygen/201804111000&countryCode=us&timeZone=-3&format=xml
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.stream(java.net.URI, org.eclipse.core.runtime.IProgressMonitor)" because "this.transport" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorsDocument(MirrorSelector.java:305)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.computeMirrors(MirrorSelector.java:259)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.initMirrors(MirrorSelector.java:360)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.selectMirror(MirrorSelector.java:430)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorLocation(MirrorSelector.java:338)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getMirror(SimpleArtifactRepository.java:761)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:655)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-01 19:46:17.884
+!MESSAGE An internal error occurred during: "Install download3".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getTransport()" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.884
+!MESSAGE Error processing mirrors URL: http://www.eclipse.org/downloads/download.php?format=xml&file=/releases/oxygen/201804111000&countryCode=us&timeZone=-3&format=xml
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.stream(java.net.URI, org.eclipse.core.runtime.IProgressMonitor)" because "this.transport" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorsDocument(MirrorSelector.java:305)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.computeMirrors(MirrorSelector.java:259)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.initMirrors(MirrorSelector.java:360)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.selectMirror(MirrorSelector.java:430)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorLocation(MirrorSelector.java:338)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getMirror(SimpleArtifactRepository.java:761)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:655)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.885
+!MESSAGE Error processing mirrors URL: http://www.eclipse.org/downloads/download.php?format=xml&file=/releases/oxygen/201804111000&countryCode=us&timeZone=-3&format=xml
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.stream(java.net.URI, org.eclipse.core.runtime.IProgressMonitor)" because "this.transport" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorsDocument(MirrorSelector.java:305)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.computeMirrors(MirrorSelector.java:259)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.initMirrors(MirrorSelector.java:360)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.selectMirror(MirrorSelector.java:430)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorLocation(MirrorSelector.java:338)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getMirror(SimpleArtifactRepository.java:761)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:655)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-01 19:46:17.886
+!MESSAGE An internal error occurred during: "Install download1".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getTransport()" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-01 19:46:17.944
+!MESSAGE An internal error occurred during: "Install download0".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.internal.p2.repository.Transport.download(java.net.URI, java.io.OutputStream, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getTransport()" is null
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:734)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:656)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:793)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:775)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:64)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2023-10-01 19:46:17.960
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2023-10-01 19:46:17.960
+!MESSAGE session context was:(profile=epp.package.java, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jst.enterprise_ui.feature,3.9.3.v201803221418
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jst.j2ee,1.2.201.v201801172042
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jst.jsf.doc.user,1.5.0.v201712131442
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jst.jsp.core,1.2.1002.v201711072103
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jst.jsp.ui,1.1.1201.v201710051737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jst.standard.schemas,1.2.202.v201802152012
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jst.web_core.feature,3.9.1.v201802152012
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jst.web_ui.feature,3.9.0.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jst.web_userdoc.feature,3.6.0.v201712131442
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jst.ws.consumption,1.0.1001.v201803211723
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jst.ws.jaxrs.core,1.0.800.v201802121827
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.common.emf,1.2.501.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.common.modulecore,1.3.0.v201803191954
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.common_core.feature,3.9.1.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.common_ui.feature,3.9.1.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.html.core,1.2.102.v201711080031
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.jsdt.core,2.0.301.v201710051729
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.jsdt.doc,2.0.200.v201710302345
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.jsdt.feature,2.1.1.v201803202007
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.jsdt.js.npm,1.0.300.v201711211802
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.jsdt.nodejs.feature,1.1.0.v201803202007
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.jsdt.ui,2.0.301.v201710051729
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.jsdt.web.ui,1.1.0.v201711080031
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.json_core.feature,1.1.2.v201711071522
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.json_ui.feature,1.1.2.v201711071522
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.sse.core,1.1.1002.v201711071507
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.web_core.feature,3.9.2.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.web_ui.feature,3.9.2.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.web_userdoc.feature,3.9.2.v201710252304
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.960
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.ws_ui.feature,3.8.1.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.961
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.wsdl,1.2.500.v201710302117
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.961
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.xml.core,1.1.1101.v201711080222
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.961
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.xml_core.feature,3.9.2.v201711080222
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.961
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.xml_ui.feature,3.9.2.v201803221834
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.961
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.wst.xml_userdoc.feature,3.9.2.v201711071522
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2023-10-01 19:46:17.961
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.wst.xsd.ui,1.2.602.v201801171858
+!SESSION 2023-10-01 19:46:20.709 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2023-10-01 19:46:33.866
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-01 19:46:33.866
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:07.320
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl,1.2.500.v201710302117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:09.923
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee,1.2.201.v201801172042 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:09.923
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.enterprise_ui.feature,3.9.3.v201803221418.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:09.924
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsp.core,1.2.1002.v201711072103 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:10.670
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.doc.user,1.5.0.v201712131442 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:12.567
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsp.ui,1.1.1201.v201710051737 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:12.970
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.standard.schemas,1.2.202.v201802152012 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:14.179
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.web_core.feature,3.9.1.v201802152012.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:14.709
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.web_ui.feature,3.9.0.v201803221834.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:14.710
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.web_userdoc.feature,3.6.0.v201712131442.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:14.861
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption,1.0.1001.v201803211723 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:14.867
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxrs.core,1.0.800.v201802121827 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:15.016
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.emf,1.2.501.v201803221834 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:16.269
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.modulecore,1.3.0.v201803191954 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:16.599
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.common_core.feature,3.9.1.v201803221834.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:17.362
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.common_ui.feature,3.9.1.v201803221834.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:17.421
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.html.core,1.2.102.v201711080031 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:17.465
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.core,2.0.301.v201710051729 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:17.862
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.doc,2.0.200.v201710302345 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:18.641
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.jsdt.feature,2.1.1.v201803202007.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:18.879
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.js.npm,1.0.300.v201711211802 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:18.879
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.jsdt.nodejs.feature,1.1.0.v201803202007.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:19.023
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.ui,2.0.301.v201710051729 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:19.075
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.web.ui,1.1.0.v201711080031 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:19.545
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.json_core.feature,1.1.2.v201711071522.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:20.003
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.json_ui.feature,1.1.2.v201711071522.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:20.735
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.core,1.1.1002.v201711071507 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:21.083
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.web_core.feature,3.9.2.v201803221834.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:21.222
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.web_ui.feature,3.9.2.v201803221834.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:21.883
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.web_userdoc.feature,3.9.2.v201710252304.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:22.122
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_ui.feature,3.8.1.v201803221834.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:22.255
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.core,1.1.1101.v201711080222 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:22.465
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xml_core.feature,3.9.2.v201711080222.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:22.628
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xml_ui.feature,3.9.2.v201803221834.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-10-01 19:48:23.004
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xml_userdoc.feature,3.9.2.v201711071522.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-01 19:48:23.808
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsd.ui,1.2.602.v201801171858 have severely compromised security. Please report this concern to the artifact provider.
+!SESSION 2023-10-01 19:48:58.003 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/pedro/Development/git_space/my_graduation_codes/4st_semester/lp2a4/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.235
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.servlet_5.0.0.v20210105-0527.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationMetadataRepository.ensureInitialized(ExtensionLocationMetadataRepository.java:68)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationMetadataRepository.getProperties(ExtensionLocationMetadataRepository.java:177)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.addRepository(AbstractRepositoryManager.java:132)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.addRepository(MetadataRepositoryManager.java:40)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.createExtensionLocationMetadataRepository(Activator.java:85)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:213)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.237
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.el_4.0.0.v20221203-1659.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationMetadataRepository.ensureInitialized(ExtensionLocationMetadataRepository.java:68)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationMetadataRepository.getProperties(ExtensionLocationMetadataRepository.java:177)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.addRepository(AbstractRepositoryManager.java:132)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.addRepository(MetadataRepositoryManager.java:40)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.createExtensionLocationMetadataRepository(Activator.java:85)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:213)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.299
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.servlet_5.0.0.v20210105-0527.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.ensureInitialized(ExtensionLocationArtifactRepository.java:69)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.getProperties(ExtensionLocationArtifactRepository.java:283)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.addRepository(AbstractRepositoryManager.java:132)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:691)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.loadArtifactRepository(Activator.java:147)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:241)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.300
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.el_4.0.0.v20221203-1659.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.ensureInitialized(ExtensionLocationArtifactRepository.java:69)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.getProperties(ExtensionLocationArtifactRepository.java:283)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.addRepository(AbstractRepositoryManager.java:132)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:691)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.loadArtifactRepository(Activator.java:147)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:241)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.347
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.servlet_5.0.0.v20210105-0527.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.ensureInitialized(ExtensionLocationArtifactRepository.java:69)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.setProperty(ExtensionLocationArtifactRepository.java:299)
+	at org.eclipse.equinox.p2.repository.spi.AbstractRepository.setProperty(AbstractRepository.java:194)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:245)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.348
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.el_4.0.0.v20221203-1659.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.ensureInitialized(ExtensionLocationArtifactRepository.java:69)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.setProperty(ExtensionLocationArtifactRepository.java:299)
+	at org.eclipse.equinox.p2.repository.spi.AbstractRepository.setProperty(AbstractRepository.java:194)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:245)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.407
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.servlet_5.0.0.v20210105-0527.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.ensureInitialized(ExtensionLocationArtifactRepository.java:69)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.setProperty(ExtensionLocationArtifactRepository.java:299)
+	at org.eclipse.equinox.p2.repository.spi.AbstractRepository.setProperty(AbstractRepository.java:194)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:245)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 2 0 2023-10-01 19:49:07.408
+!MESSAGE An error occurred while loading the manifest /home/pedro/.var/app/org.eclipse.Java/eclipse/plugins/jakarta.el_4.0.0.v20221203-1659.jar.
+!STACK 0
+java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1382)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1477)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.basicLoadManifest(BundlesAction.java:833)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.loadManifest(BundlesAction.java:802)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescription(BundlesAction.java:779)
+	at org.eclipse.equinox.p2.publisher.eclipse.BundlesAction.createBundleDescriptionIgnoringExceptions(BundlesAction.java:763)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.processBundle(RepositoryListener.java:148)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.process(RepositoryListener.java:143)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.added(RepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.extensionlocation.BundlePoolFilteredListener.added(BundlePoolFilteredListener.java:42)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.added(SiteListener.java:326)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:199)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:162)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:112)
+	at org.eclipse.equinox.internal.p2.extensionlocation.SiteListener.synchronizeRepositories(SiteListener.java:116)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.ensureInitialized(ExtensionLocationArtifactRepository.java:69)
+	at org.eclipse.equinox.internal.p2.extensionlocation.ExtensionLocationArtifactRepository.setProperty(ExtensionLocationArtifactRepository.java:299)
+	at org.eclipse.equinox.p2.repository.spi.AbstractRepository.setProperty(AbstractRepository.java:194)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.synchronizeConfiguration(PlatformXmlListener.java:245)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.PlatformXmlListener.stopPoll(PlatformXmlListener.java:122)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.stopPoll(DirectoryWatcher.java:173)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:113)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchConfiguration(Activator.java:494)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1788)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-01 19:49:12.752
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-01 19:49:12.752
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2023-10-01 19:50:06.989
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.RuntimeException: java.lang.NoSuchMethodError: 'org.eclipse.core.runtime.jobs.IJobManager org.eclipse.core.runtime.Platform.getJobManager()'
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.performFinish(ModifyFacetedProjectWizard.java:388)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.performFinish(NewProjectDataModelFacetWizard.java:299)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:837)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:473)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:263)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:283)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:309)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:243)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:389)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+Caused by: java.lang.NoSuchMethodError: 'org.eclipse.core.runtime.jobs.IJobManager org.eclipse.core.runtime.Platform.getJobManager()'
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper$FileAdapter.getSaveLock(WorkbenchResourceHelper.java:157)
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper$FileAdapter.aquireSaveLock(WorkbenchResourceHelper.java:141)
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper$FileAdapter.isConsistent(WorkbenchResourceHelper.java:213)
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper.isConsistent(WorkbenchResourceHelper.java:314)
+	at org.eclipse.wst.common.internal.emfworkbench.validateedit.ResourceStateValidatorImpl.getInconsistentResources(ResourceStateValidatorImpl.java:283)
+	at org.eclipse.wst.common.internal.emfworkbench.validateedit.ResourceStateValidatorImpl.checkConsistency(ResourceStateValidatorImpl.java:150)
+	at org.eclipse.wst.common.internal.emfworkbench.validateedit.ResourceStateValidatorImpl.checkActivation(ResourceStateValidatorImpl.java:75)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.EditModel.checkActivation(EditModel.java:628)
+	at org.eclipse.wst.common.componentcore.internal.ModuleStructuralModel.checkActivation(ModuleStructuralModel.java:319)
+	at org.eclipse.jst.j2ee.internal.listeners.ValidateEditListener.validateState(ValidateEditListener.java:255)
+	at org.eclipse.jst.j2ee.internal.listeners.ValidateEditListener.validateState(ValidateEditListener.java:330)
+	at org.eclipse.wst.common.componentcore.internal.StructureEdit.validateEdit(StructureEdit.java:972)
+	at org.eclipse.wst.common.componentcore.internal.StructureEdit.saveIfNecessary(StructureEdit.java:395)
+	at org.eclipse.wst.common.componentcore.internal.resources.VirtualComponent.create(VirtualComponent.java:373)
+	at org.eclipse.jst.j2ee.web.project.facet.WebFacetInstallDelegate.execute(WebFacetInstallDelegate.java:100)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.callDelegate(FacetedProject.java:1477)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:441)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$5.run(FacetedProject.java:1099)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChanges(FacetedProject.java:1109)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.commitChanges(FacetedProjectWorkingCopy.java:2020)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.performFinish(ModifyFacetedProjectWizard.java:400)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.performFinish(NewProjectDataModelFacetWizard.java:282)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard$3.run(ModifyFacetedProjectWizard.java:331)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard$4.run(ModifyFacetedProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui 4 0 2023-10-01 19:50:21.366
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.RuntimeException: java.lang.NoSuchMethodError: 'org.eclipse.core.runtime.jobs.IJobManager org.eclipse.core.runtime.Platform.getJobManager()'
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.performFinish(ModifyFacetedProjectWizard.java:388)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.performFinish(NewProjectDataModelFacetWizard.java:299)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:837)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:473)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:263)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:283)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:309)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:243)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:389)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5065)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+Caused by: java.lang.NoSuchMethodError: 'org.eclipse.core.runtime.jobs.IJobManager org.eclipse.core.runtime.Platform.getJobManager()'
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper$FileAdapter.getSaveLock(WorkbenchResourceHelper.java:157)
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper$FileAdapter.aquireSaveLock(WorkbenchResourceHelper.java:141)
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper$FileAdapter.isConsistent(WorkbenchResourceHelper.java:213)
+	at org.eclipse.wst.common.internal.emfworkbench.WorkbenchResourceHelper.isConsistent(WorkbenchResourceHelper.java:314)
+	at org.eclipse.wst.common.internal.emfworkbench.validateedit.ResourceStateValidatorImpl.getInconsistentResources(ResourceStateValidatorImpl.java:283)
+	at org.eclipse.wst.common.internal.emfworkbench.validateedit.ResourceStateValidatorImpl.checkConsistency(ResourceStateValidatorImpl.java:150)
+	at org.eclipse.wst.common.internal.emfworkbench.validateedit.ResourceStateValidatorImpl.checkActivation(ResourceStateValidatorImpl.java:75)
+	at org.eclipse.wst.common.internal.emfworkbench.integration.EditModel.checkActivation(EditModel.java:628)
+	at org.eclipse.wst.common.componentcore.internal.ModuleStructuralModel.checkActivation(ModuleStructuralModel.java:319)
+	at org.eclipse.jst.j2ee.internal.listeners.ValidateEditListener.validateState(ValidateEditListener.java:255)
+	at org.eclipse.jst.j2ee.internal.listeners.ValidateEditListener.validateState(ValidateEditListener.java:330)
+	at org.eclipse.wst.common.componentcore.internal.StructureEdit.validateEdit(StructureEdit.java:972)
+	at org.eclipse.wst.common.componentcore.internal.StructureEdit.saveIfNecessary(StructureEdit.java:395)
+	at org.eclipse.wst.common.componentcore.internal.resources.VirtualComponent.create(VirtualComponent.java:373)
+	at org.eclipse.jst.j2ee.web.project.facet.WebFacetInstallDelegate.execute(WebFacetInstallDelegate.java:100)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.callDelegate(FacetedProject.java:1477)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:441)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$5.run(FacetedProject.java:1099)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChanges(FacetedProject.java:1109)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.commitChanges(FacetedProjectWorkingCopy.java:2020)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.performFinish(ModifyFacetedProjectWizard.java:400)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.performFinish(NewProjectDataModelFacetWizard.java:282)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard$3.run(ModifyFacetedProjectWizard.java:331)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2407)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard$4.run(ModifyFacetedProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2023-10-01 19:51:20.724
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.jst.j2ee.internal.plugin.J2EEPlugin.stop() of bundle org.eclipse.jst.j2ee.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1046)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:376)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1893)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1768)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:208)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NoSuchMethodError: 'org.eclipse.core.runtime.jobs.IJobManager org.eclipse.core.runtime.Platform.getJobManager()'
+	at org.eclipse.jst.j2ee.internal.plugin.J2EEPlugin.stop(J2EEPlugin.java:548)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:875)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:867)
+	... 13 more
+Root exception:
+java.lang.NoSuchMethodError: 'org.eclipse.core.runtime.jobs.IJobManager org.eclipse.core.runtime.Platform.getJobManager()'
+	at org.eclipse.jst.j2ee.internal.plugin.J2EEPlugin.stop(J2EEPlugin.java:548)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:875)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:867)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1046)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:376)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1893)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1768)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:208)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
+	at java.base/java.lang.Thread.run(Thread.java:833)
